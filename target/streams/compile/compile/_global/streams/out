@@ -1,0 +1,40 @@
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:60:33: value asBool is not a member of spinal.core.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.valid := bits(offset).asBool; offset += 1[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:61:26: overloaded method value := with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (that: spinal.core.SpinalEnumElement[spinal.lib.bus.tilelink.Opcode.<refinement>.type])Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (that: spinal.core.SpinalEnumCraft[spinal.lib.bus.tilelink.Opcode.<refinement>.type])(implicit loc: spinal.idslplugin.Location)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (spinal.core.Bits)[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.payload.opcode := bits(offset+2 downto offset).asBits; offset += 3[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:63:26: overloaded method value := with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: String)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (rangesValue: (Any, Any),_rangesValues: (Any, Any)*)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (that: spinal.core.UInt)(implicit loc: spinal.idslplugin.Location)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (spinal.core.Bits)[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.payload.size   := bits(offset+2 downto offset).asBits; offset += 3[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:64:26: overloaded method value := with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: String)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (rangesValue: (Any, Any),_rangesValues: (Any, Any)*)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (that: spinal.core.UInt)(implicit loc: spinal.idslplugin.Location)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (spinal.core.Bits)[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.payload.source := bits(offset+3 downto offset).asBits; offset += 4[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:65:26: overloaded method value := with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: String)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (rangesValue: (Any, Any),_rangesValues: (Any, Any)*)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (that: spinal.core.UInt)(implicit loc: spinal.idslplugin.Location)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (spinal.core.Bits)[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.payload.sink   := bits(offset+1 downto offset).asBits; offset += 2[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:66:42: value asBool is not a member of spinal.core.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.payload.denied := bits(offset).asBool; offset += 1[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:68:43: value asBool is not a member of spinal.core.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.d.payload.corrupt := bits(offset).asBool; offset += 1[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zakaria/VexiiRiscv/src/main/scala/vexiiriscv/soc/micro/AesFiber.scala:69:33: value asBool is not a member of spinal.core.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m    bus.a.ready := bits(offset).asBool; offset += 1[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m
