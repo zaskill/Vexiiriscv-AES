@@ -5389,7 +5389,7 @@ module PeripheralAesCore (
     .probe6(keyData),
     .probe7(decryptModeReg),
     .probe8(aesIv),
-    .probe9(start)
+    .probe9(startPulse)
 
   );
 

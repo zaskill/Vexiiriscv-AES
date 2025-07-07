@@ -23,8 +23,9 @@ with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=2) as ser:
         framed_block = b"\xAA" + block  # prepend 0xAA header
 
         ser.write(framed_block)
+        time.sleep(0.01) 
         print(f"[TX] Block {i//block_size:02d}: {framed_block.hex().upper()}")
 
         # Read response line (decrypted output)
-        #print(ser.readline())
+        print(ser.readline())
   
