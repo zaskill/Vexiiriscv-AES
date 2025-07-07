@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S
+
+/nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S
+

@@ -1,0 +1,10 @@
+target_sources(
+    ${TARGET}
+    INTERFACE
+        clint.h
+        gpio.h
+        io.h
+        plic.h
+        uart.h
+        type.h
+)

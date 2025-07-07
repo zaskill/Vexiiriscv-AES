@@ -1,0 +1,4 @@
+/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/build/CMakeFiles/edit_cache.dir
+/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/build/CMakeFiles/rebuild_cache.dir
+/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/build/system/CMakeFiles/edit_cache.dir
+/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/build/system/CMakeFiles/rebuild_cache.dir

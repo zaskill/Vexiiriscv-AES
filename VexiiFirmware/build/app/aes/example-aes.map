@@ -1,0 +1,857 @@
+Membre d'archive inclu pour satisfaire la référence par fichier (symbole)
+
+/nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+                              CMakeFiles/example-aes.dir/main.cpp.obj (__mulsi3)
+/nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                              CMakeFiles/example-aes.dir/main.cpp.obj (__udivsi3)
+/nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+                              CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj (__libc_init_array)
+/nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+                              CMakeFiles/example-aes.dir/main.cpp.obj (strlen)
+
+Sections d'entrée éliminées
+
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZL5CLINT
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZL4PLIC
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZL6UART_A
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZL8AES_BASE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL16clint_getTimeLowm
+                0x00000000       0x48 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL17clint_getTimeHighm
+                0x00000000       0x48 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL12clint_setCmpmym
+                0x00000000       0xb8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL13clint_getTimem
+                0x00000000       0xe0 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL12clint_uDelaymmm
+                0x00000000       0xb4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL20__gthread_key_deletei
+                0x00000000       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL17plic_set_prioritymmm
+                0x00000000       0x50 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL15plic_set_enablemmmm
+                0x00000000       0xd4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL18plic_set_thresholdmmm
+                0x00000000       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL10plic_claimmm
+                0x00000000       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL12plic_releasemmm
+                0x00000000       0x5c CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL13uart_writeStrmPKc
+                0x00000000       0x60 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL13uart_writeHexmi
+                0x00000000       0xa8 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL16uart_applyConfigmP11Uart_Config
+                0x00000000       0x94 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZL9SYSTEM_HZ
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .sdata._ZN3socL5clintE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .sdata._ZN3socL4plicE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail30__integer_to_chars_is_unsignedIjEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail30__integer_to_chars_is_unsignedImEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail30__integer_to_chars_is_unsignedIyEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vItE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vIPKcE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt8__format10_Sink_iterIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt8__format10_Sink_iterIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt8__format10_Sink_iterIwEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt8__format10_Sink_iterIwEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt13_Bit_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt13_Bit_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt19_Bit_const_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt19_Bit_const_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vIPNSt6chrono9time_zone5_ImplEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vISt14default_deleteINSt6chrono9time_zone5_ImplEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS4_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS4_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS5_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS5_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS3_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS3_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS4_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS4_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKSt4byteEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKSt4byteEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIjEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIjEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPSt4byteEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPSt4byteEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPKcSt4spanIS3_Lj39EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPKcSt4spanIS3_Lj39EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKcSt4spanIS4_Lj39EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKcSt4spanIS4_Lj39EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS4_Lj39EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS4_Lj39EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS5_Lj39EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS5_Lj39EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS3_Lj16EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS3_Lj16EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS4_Lj16EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS4_Lj16EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1ELx1000000000EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1ELx1EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx31556952ELx1EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1ELx2629746EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1000000000ELx1EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES1_E
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES1_E
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vIPKwE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESt6vectorE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKDiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKDiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt9__unicode13_Utf_iteratorIDicPKDiS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt9__unicode13_Utf_iteratorIDicPKDiS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt17basic_string_viewIcSt11char_traitsIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt17basic_string_viewIcSt11char_traitsIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt9__unicode13_Utf_iteratorIcDiPKcS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt9__unicode13_Utf_iteratorIcDiPKcS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj
+ .data          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj
+ .bss           0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj
+ .text          0x00000000       0x94 CMakeFiles/example-aes.dir/__/__/soc/common/trap.S.obj
+ .data          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/trap.S.obj
+ .bss           0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/trap.S.obj
+ .riscv.attributes
+                0x00000000       0x1e CMakeFiles/example-aes.dir/__/__/soc/common/trap.S.obj
+ .text          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .text.trap     0x00000000       0x24 CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .comment       0x00000000       0x10 CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .note.GNU-stack
+                0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .riscv.attributes
+                0x00000000       0x1c CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZL5CLINT
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZL4PLIC
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZL6UART_A
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZL8AES_BASE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL8read_u32m
+                0x00000000       0x30 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL9write_u32mm
+                0x00000000       0x38 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL16clint_getTimeLowm
+                0x00000000       0x48 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL17clint_getTimeHighm
+                0x00000000       0x48 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL12clint_setCmpmym
+                0x00000000       0xb8 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL13clint_getTimem
+                0x00000000       0xe0 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL12clint_uDelaymmm
+                0x00000000       0xb4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL20__gthread_key_deletei
+                0x00000000       0x2c CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL17plic_set_prioritymmm
+                0x00000000       0x50 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL15plic_set_enablemmmm
+                0x00000000       0xd4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL18plic_set_thresholdmmm
+                0x00000000       0x58 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL10plic_claimmm
+                0x00000000       0x58 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL12plic_releasemmm
+                0x00000000       0x5c CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL22uart_writeAvailabilitym
+                0x00000000       0x48 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL18uart_readOccupancym
+                0x00000000       0x44 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL10uart_writemc
+                0x00000000       0x64 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL13uart_writeStrmPKc
+                0x00000000       0x60 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL13uart_writeHexmi
+                0x00000000       0xa8 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL9uart_readm
+                0x00000000       0x5c CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text._ZL16uart_applyConfigmP11Uart_Config
+                0x00000000       0x94 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZL9SYSTEM_HZ
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .sdata._ZN3socL5clintE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .sdata._ZN3socL4plicE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .sdata._ZN3socL4uartE
+                0x00000000        0x4 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail30__integer_to_chars_is_unsignedIjEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail30__integer_to_chars_is_unsignedImEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail30__integer_to_chars_is_unsignedIyEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vItE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vIPKcE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPcSt4spanIcLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt8__format10_Sink_iterIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt8__format10_Sink_iterIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPwSt4spanIwLj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt8__format10_Sink_iterIwEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt8__format10_Sink_iterIwEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt13_Bit_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt13_Bit_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt19_Bit_const_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt19_Bit_const_iteratorEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vIPNSt6chrono9time_zone5_ImplEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vISt14default_deleteINSt6chrono9time_zone5_ImplEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS4_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS4_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS5_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS5_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS3_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS3_Lj4294967295EEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS4_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS4_Lj4294967295EEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1ELx1000000000EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1ELx1EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx31556952ELx1EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1ELx2629746EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt12__is_ratio_vISt5ratioILx1000000000ELx1EEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES1_E
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES1_E
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIjEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIjEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt39__is_implicitly_default_constructible_vIPKwE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKcEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKwEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESt6vectorE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIN9__gnu_cxx17__normal_iteratorIPwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIN9__gnu_cxx17__normal_iteratorIPwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZSt22__is_specialization_ofINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleIPKDiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implIPKDiEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt9__unicode13_Utf_iteratorIDicPKDiS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt9__unicode13_Utf_iteratorIDicPKDiS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleISt17basic_string_viewIcSt11char_traitsIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implISt17basic_string_viewIcSt11char_traitsIcEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail14__destructibleINSt9__unicode13_Utf_iteratorIcDiPKcS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .srodata._ZNSt8__detail19__destructible_implINSt9__unicode13_Utf_iteratorIcDiPKcS4_NS1_5_ReplEEEEE
+                0x00000000        0x1 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .text          0x00000000       0x24 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .data          0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .bss           0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .debug_line    0x00000000       0x7a /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .debug_line_str
+                0x00000000       0x97 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .debug_info    0x00000000       0x31 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .debug_abbrev  0x00000000       0x28 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .debug_aranges
+                0x00000000       0x20 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .debug_str     0x00000000       0xac /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .riscv.attributes
+                0x00000000       0x1a /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .text          0x00000000       0xb4 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .data          0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .bss           0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_line    0x00000000      0x153 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_line_str
+                0x00000000       0x94 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_info    0x00000000       0x5f /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_abbrev  0x00000000       0x28 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_aranges
+                0x00000000       0x20 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_str     0x00000000       0xd9 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .riscv.attributes
+                0x00000000       0x1a /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ .text          0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+ .data          0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+ .bss           0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+ .text          0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+ .data          0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+ .bss           0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+
+Configuration mémoire
+
+Nom              Origine            Longueur           Attributs
+ram              0x80000000         0x00004000         axwl!r
+*default*        0x00000000         0xffffffff
+
+Script de l'éditeurs de liens and table de projection mémoire
+
+LOAD CMakeFiles/example-aes.dir/main.cpp.obj
+LOAD CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj
+LOAD CMakeFiles/example-aes.dir/__/__/soc/common/trap.S.obj
+LOAD CMakeFiles/example-aes.dir/__/__/soc/common/trap.cpp.obj
+LOAD CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libstdc++.a
+LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libm.a
+LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a
+START GROUP
+LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a
+LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libgloss.a
+END GROUP
+LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libgcc.a
+                0x80000000                        RAM_ORIGIN = 0x80000000
+                0x00004000                        RAM_LENGTH = 0x4000
+                0x00000400                        __heap_size = 0x400
+                0x00000400                        __stack_size = 0x400
+                0x80000000                        RAM_ORIGIN = 0x80000000
+                0x00004000                        RAM_LENGTH = 0x4000
+                0x00000400                        __heap_size = 0x400
+                0x00000400                        __stack_size = 0x400
+                0x00000400                        __stack_size = DEFINED (__stack_size)?__stack_size:0x800
+
+.init           0x80000000       0x68
+ *(SORT_NONE(.init))
+ .init          0x80000000       0x68 CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj
+                0x80000000                _start
+                0x80000064                _init
+
+.text           0x80000068     0x14fc
+ *(.text.unlikely .text.unlikely.*)
+ *(.text.startup .text.startup.*)
+ *(.text .text.*)
+ .text._ZL8read_u32m
+                0x80000068       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL9write_u32mm
+                0x80000098       0x38 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZNSt8__detail16__extent_storageILj4294967295EEC2Ej
+                0x800000d0       0x38 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800000d0                std::__detail::__extent_storage<4294967295u>::__extent_storage(unsigned int)
+                0x800000d0                std::__detail::__extent_storage<4294967295u>::__extent_storage(unsigned int)
+ .text._ZNKSt8__detail16__extent_storageILj4294967295EE9_M_extentEv
+                0x80000108       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000108                std::__detail::__extent_storage<4294967295u>::_M_extent() const
+ .text._ZL22uart_writeAvailabilitym
+                0x80000138       0x44 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL18uart_readOccupancym
+                0x8000017c       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL10uart_writemc
+                0x800001bc       0x5c CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZL9uart_readm
+                0x80000218       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text._ZNK9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS2_Lj4294967295EEE4baseEv
+                0x8000026c       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000026c                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::base() const
+ .text._ZN9__gnu_cxxeqIPKSt4byteSt4spanIS2_Lj4294967295EEEEbRKNS_17__normal_iteratorIT_T0_EESB_QrqXeqcldtfL0p_4baseEcldtfL0p0_4baseERSt14convertible_toIbEE
+                0x80000298       0x60 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000298                _ZN9__gnu_cxxeqIPKSt4byteSt4spanIS2_Lj4294967295EEEEbRKNS_17__normal_iteratorIT_T0_EESB_QrqXeqcldtfL0p_4baseEcldtfL0p0_4baseERSt14convertible_toIbEE
+                0x80000298                bool __gnu_cxx::operator==<std::byte const*, std::span<std::byte const, 4294967295u> >(__gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> > const&, __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> > const&)
+ .text._ZNK9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS2_Lj4294967295EEEdeEv
+                0x800002f8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800002f8                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::operator*() const
+ .text._ZN3hal6spinal4uart5writeESt4spanIKSt4byteLj4294967295EE
+                0x80000328       0xbc CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000328                hal::spinal::uart::write(std::span<std::byte const, 4294967295u>)
+ .text._ZNK9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS1_Lj4294967295EEE4baseEv
+                0x800003e4       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800003e4                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::base() const
+ .text._ZN9__gnu_cxxeqIPSt4byteSt4spanIS1_Lj4294967295EEEEbRKNS_17__normal_iteratorIT_T0_EESA_QrqXeqcldtfL0p_4baseEcldtfL0p0_4baseERSt14convertible_toIbEE
+                0x80000410       0x60 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000410                _ZN9__gnu_cxxeqIPSt4byteSt4spanIS1_Lj4294967295EEEEbRKNS_17__normal_iteratorIT_T0_EESA_QrqXeqcldtfL0p_4baseEcldtfL0p0_4baseERSt14convertible_toIbEE
+                0x80000410                bool __gnu_cxx::operator==<std::byte*, std::span<std::byte, 4294967295u> >(__gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> > const&, __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> > const&)
+ .text._ZNK9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS1_Lj4294967295EEEdeEv
+                0x80000470       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000470                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::operator*() const
+ .text._ZN3hal6spinal4uart4readESt4spanISt4byteLj4294967295EE
+                0x800004a0       0xc0 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800004a0                hal::spinal::uart::read(std::span<std::byte, 4294967295u>)
+ .text._ZZ4mainENKUlPKcPKmiE_clES0_S2_i
+                0x80000560      0x1a4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text.main     0x80000704      0x3f4 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000704                main
+ .text._ZNKSt4spanIKSt4byteLj4294967295EE5beginEv
+                0x80000af8       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000af8                std::span<std::byte const, 4294967295u>::begin() const
+ .text._ZNKSt4spanIKSt4byteLj4294967295EE3endEv
+                0x80000b38       0x64 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000b38                std::span<std::byte const, 4294967295u>::end() const
+ .text._ZN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS2_Lj4294967295EEEppEv
+                0x80000b9c       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000b9c                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::operator++()
+ .text._ZNKSt4spanISt4byteLj4294967295EE5beginEv
+                0x80000bdc       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000bdc                std::span<std::byte, 4294967295u>::begin() const
+ .text._ZNKSt4spanISt4byteLj4294967295EE3endEv
+                0x80000c1c       0x64 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000c1c                std::span<std::byte, 4294967295u>::end() const
+ .text._ZN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS1_Lj4294967295EEEppEv
+                0x80000c80       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000c80                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::operator++()
+ .text._ZNSt4spanIKSt4byteLj4294967295EEC2IPS1_EET_j
+                0x80000cc0       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000cc0                std::span<std::byte const, 4294967295u>::span<std::byte const*>(std::byte const*, unsigned int)
+                0x80000cc0                std::span<std::byte const, 4294967295u>::span<std::byte const*>(std::byte const*, unsigned int)
+ .text._ZNSt4spanIKSt4byteLj4294967295EEC2IPS0_EET_j
+                0x80000d18       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000d18                std::span<std::byte const, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000d18                std::span<std::byte const, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+ .text._ZSt10to_addressIKcEPT_S2_
+                0x80000d70       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000d70                char const* std::to_address<char const>(char const*)
+ .text._ZNSt4spanIKcLj39EEC2IPS0_EET_j
+                0x80000da4       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000da4                std::span<char const, 39u>::span<char const*>(char const*, unsigned int)
+                0x80000da4                std::span<char const, 39u>::span<char const*>(char const*, unsigned int)
+ .text._ZSt12__to_addressIKcEPT_S2_
+                0x80000df8       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000df8                char const* std::__to_address<char const>(char const*)
+ .text._ZNSt4spanIKcLj39EEC2ILj39EEERAT__S0_
+                0x80000e24       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000e24                std::span<char const, 39u>::span<39u>(char const (&) [39u])
+                0x80000e24                std::span<char const, 39u>::span<39u>(char const (&) [39u])
+ .text._ZNSt8__detail16__extent_storageILj39EE9_M_extentEv
+                0x80000e60       0x28 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000e60                std::__detail::__extent_storage<39u>::_M_extent()
+ .text._ZSt8as_bytesIKcLj39EESt4spanIKSt4byteXquneT0_L_ZSt14dynamic_extentEmlT0_stT_L_ZSt14dynamic_extentEEES1_IS4_XT0_EE
+                0x80000e88       0x60 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000e88                std::span<std::byte const, ((39u)!=std::dynamic_extent)?((39u)*(sizeof (char const))) : std::dynamic_extent> std::as_bytes<char const, 39u>(std::span<char const, 39u>)
+ .text._ZNKSt4spanIKSt4byteLj39EE4sizeEv
+                0x80000ee8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000ee8                std::span<std::byte const, 39u>::size() const
+ .text._ZNSt4spanIKSt4byteLj4294967295EEC2IS1_Lj39EEERKS_IT_XT0_EE
+                0x80000f18       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000f18                std::span<std::byte const, 4294967295u>::span<std::byte const, 39u>(std::span<std::byte const, 39u> const&)
+                0x80000f18                std::span<std::byte const, 4294967295u>::span<std::byte const, 39u>(std::span<std::byte const, 39u> const&)
+ .text._ZNSt4spanISt4byteLj4294967295EEC2IPS0_EET_j
+                0x80000f80       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000f80                std::span<std::byte, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000f80                std::span<std::byte, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+ .text._ZSt10to_addressISt4byteEPT_S2_
+                0x80000fd8       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000fd8                std::byte* std::to_address<std::byte>(std::byte*)
+ .text._ZNSt4spanISt4byteLj16EEC2IPS0_EET_j
+                0x8000100c       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000100c                std::span<std::byte, 16u>::span<std::byte*>(std::byte*, unsigned int)
+                0x8000100c                std::span<std::byte, 16u>::span<std::byte*>(std::byte*, unsigned int)
+ .text._ZSt12__to_addressISt4byteEPT_S2_
+                0x80001060       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001060                std::byte* std::__to_address<std::byte>(std::byte*)
+ .text._ZNSt4spanISt4byteLj16EEC2ILj16EEERAT__S0_
+                0x8000108c       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000108c                std::span<std::byte, 16u>::span<16u>(std::byte (&) [16u])
+                0x8000108c                std::span<std::byte, 16u>::span<16u>(std::byte (&) [16u])
+ .text._ZNKSt4spanISt4byteLj16EE4sizeEv
+                0x800010c8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800010c8                std::span<std::byte, 16u>::size() const
+ .text._ZNSt8__detail16__extent_storageILj16EE9_M_extentEv
+                0x800010f8       0x28 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800010f8                std::__detail::__extent_storage<16u>::_M_extent()
+ .text._ZNSt4spanISt4byteLj4294967295EEC2IS0_Lj16EEERKS_IT_XT0_EE
+                0x80001120       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001120                std::span<std::byte, 4294967295u>::span<std::byte, 16u>(std::span<std::byte, 16u> const&)
+                0x80001120                std::span<std::byte, 4294967295u>::span<std::byte, 16u>(std::span<std::byte, 16u> const&)
+ .text._ZN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS2_Lj4294967295EEEC2ERKS3_
+                0x80001188       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001188                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::__normal_iterator(std::byte const* const&)
+                0x80001188                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::__normal_iterator(std::byte const* const&)
+ .text._ZNKSt4spanIKSt4byteLj4294967295EE4sizeEv
+                0x800011c4       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800011c4                std::span<std::byte const, 4294967295u>::size() const
+ .text._ZN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS1_Lj4294967295EEEC2ERKS2_
+                0x80001200       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001200                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::__normal_iterator(std::byte* const&)
+                0x80001200                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::__normal_iterator(std::byte* const&)
+ .text._ZNKSt4spanISt4byteLj4294967295EE4sizeEv
+                0x8000123c       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000123c                std::span<std::byte, 4294967295u>::size() const
+ .text._ZSt10to_addressIKSt4byteEPT_S3_
+                0x80001278       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001278                std::byte const* std::to_address<std::byte const>(std::byte const*)
+ .text._ZNSt8__detail16__extent_storageILj39EEC2Ej
+                0x800012ac       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800012ac                std::__detail::__extent_storage<39u>::__extent_storage(unsigned int)
+                0x800012ac                std::__detail::__extent_storage<39u>::__extent_storage(unsigned int)
+ .text._ZNKSt4spanIKcLj39EE4dataEv
+                0x800012d8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800012d8                std::span<char const, 39u>::data() const
+ .text._ZNSt4spanIKSt4byteLj39EEC2IPS1_EET_j
+                0x80001308       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001308                std::span<std::byte const, 39u>::span<std::byte const*>(std::byte const*, unsigned int)
+                0x80001308                std::span<std::byte const, 39u>::span<std::byte const*>(std::byte const*, unsigned int)
+ .text._ZNKSt4spanIKSt4byteLj39EE4dataEv
+                0x8000135c       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000135c                std::span<std::byte const, 39u>::data() const
+ .text._ZNSt8__detail16__extent_storageILj16EEC2Ej
+                0x8000138c       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000138c                std::__detail::__extent_storage<16u>::__extent_storage(unsigned int)
+                0x8000138c                std::__detail::__extent_storage<16u>::__extent_storage(unsigned int)
+ .text._ZNKSt4spanISt4byteLj16EE4dataEv
+                0x800013b8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800013b8                std::span<std::byte, 16u>::data() const
+ .text._ZSt12__to_addressIKSt4byteEPT_S3_
+                0x800013e8       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800013e8                std::byte const* std::__to_address<std::byte const>(std::byte const*)
+ .text._ZN3soc4initEv
+                0x80001414       0x28 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+                0x80001414                soc::init()
+ .text.__libc_init_array
+                0x8000143c       0x9c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+                0x8000143c                __libc_init_array
+ .text.strlen   0x800014d8       0x8c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+                0x800014d8                strlen
+ *(.gnu.linkonce.t.*)
+ *(.note.gnu.build-id)
+
+.rela.dyn       0x80001564        0x0
+ .rela.init     0x80001564        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+ .rela.text.__libc_init_array
+                0x80001564        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x80001564                        . = ALIGN (0x4)
+
+.preinit_array  0x80001564        0x0
+                0x80001564                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x80001564                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x80001564        0x0
+                0x80001564                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x80001564                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x80001564        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.lalign         0x80001564        0x0
+                0x80001564                        . = ALIGN (0x4)
+                0x80001564                        PROVIDE (_data_lma = .)
+
+.dalign         0x80001564        0x0
+                0x80001564                        . = ALIGN (0x4)
+                0x80001564                        PROVIDE (_data = .)
+
+.data           0x80001564       0x78
+ *(.rdata)
+ *(.rodata .rodata.*)
+ .rodata        0x80001564       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ *(.gnu.linkonce.d.*)
+                0x800015d0                        . = ALIGN (0x8)
+ *fill*         0x800015cc        0x4 
+                [!provide]                        PROVIDE (__global_pointer$ = (. + 0x7f0))
+ *(.sdata .sdata.*)
+ .sdata._ZN3socL4uartE
+                0x800015d0        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+ *(.gnu.linkonce.s.*)
+                0x800015d8                        . = ALIGN (0x8)
+ *fill*         0x800015d4        0x4 
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+                0x800015dc                        . = (. + 0x4)
+ *fill*         0x800015d8        0x4 
+                0x800015dc                        . = ALIGN (0x4)
+                0x800015dc                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                [!provide]                        PROVIDE (_fbss = .)
+                0x800015dc                        PROVIDE (__bss_start = .)
+
+.bss            0x800015dc        0x0
+ *(.sbss*)
+ *(.gnu.linkonce.sb.*)
+ *(.bss .bss.*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x800015dc                        . = ALIGN (0x4)
+                0x800015e0                        . = ALIGN (0x8)
+                0x800015e0                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+
+.stack          0x800015e0      0x400
+                [!provide]                        PROVIDE (_heap_end = .)
+                0x00000400                        . = __stack_size
+ *fill*         0x800015e0      0x400 
+                0x800019e0                        PROVIDE (_sp = .)
+                0x800019e0                        __freertos_irq_stack_top = .
+OUTPUT(example-aes.elf elf32-littleriscv)
+
+.comment        0x00000000       0x21
+ .comment       0x00000000       0x21 CMakeFiles/example-aes.dir/main.cpp.obj
+                                 0x10 (taille avant relaxe)
+ .comment       0x00000021       0x10 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .comment       0x00000021       0x13 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+ .comment       0x00000021       0x13 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+ .note.GNU-stack
+                0x00000000        0x0 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .note.GNU-stack
+                0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+ .note.GNU-stack
+                0x00000000        0x0 /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+
+.riscv.attributes
+                0x00000000       0x20
+ .riscv.attributes
+                0x00000000       0x1c CMakeFiles/example-aes.dir/main.cpp.obj
+ .riscv.attributes
+                0x0000001c       0x1a CMakeFiles/example-aes.dir/__/__/soc/common/start.S.obj
+ .riscv.attributes
+                0x00000036       0x1c CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+ .riscv.attributes
+                0x00000052       0x1c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+ .riscv.attributes
+                0x0000006e       0x1c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
