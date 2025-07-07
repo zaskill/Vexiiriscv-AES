@@ -54,3 +54,61 @@ If you want to know what else you can do with sbt, please refer to the complete 
 In case you wanna rebuild leviathan's Docker container you can run
 
     docker build . -f docker/Dockerfile -t vexiiriscv --progress=plain
+
+
+rm -rf build && cmake -S . -B build -DSOC=microsoc/default -DDEVICE=microsoc_sim &&  make -C build example-aes
+
+sbt "runMain vexiiriscv.soc.micro.MicroSocGen \
+  --ram-bytes 16384 \
+  --ram-elf /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/aes/example-aes.elf \
+  --demo-peripheral leds=8,buttons=4 \
+  --xlen 32 \
+  --with-mul \
+  --with-div \
+  --with-rvm \
+  --system-frequency 100000000 \
+  --jtag-tap true \
+  --jtag-instruction true \
+  --reset-vector 0x80000000 \
+  --with-supervisor"
+
+
+aes_wrap aes (
+    .clk_i         (io_clk               ), //i
+    .rst_ni        (aes_rst_ni           ), //i
+    .aes_input     (128'h6bc1bee22e409f96e93d7e117393172a), //i
+    .aes_key       (256'h00000000000000008e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b), //i
+    .aes_output    (aes_aes_output[127:0]), //o
+    .alert_recov_o (aes_alert_recov_o    ), //o
+    .alert_fatal_o (aes_alert_fatal_o    ), //o
+    .test_done_o   (aes_test_done_o      )  //o
+  );
+
+   ila_1 ila_1(
+    .clk(io_clk),
+    .probe0(aes_aes_output),
+    .probe1(aes_test_done_o),
+    .probe2(aes_alert_fatal_o),
+    .probe3(aes_alert_recov_o),
+    .probe4(aes_rst_ni),
+    .probe5(inputData),
+    .probe6(keyData),
+    .probe7(decryptModeReg),
+    .probe8(aesIv),
+    .probe9(start)
+
+  );
+
+
+  6bc1bee22e409f96e93d7e117393172a
+  8e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b
+  ec46c3488dbe811a0dfbcb30440c243b
+
+
+
+
+f41fddab55e3987067a9112a15c93ae8
+E83AC9152A11A9677098E355ABDD1FF4
+
+AES_CTR
+

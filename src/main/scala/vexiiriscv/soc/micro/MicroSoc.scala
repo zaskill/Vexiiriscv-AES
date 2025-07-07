@@ -58,6 +58,9 @@ class MicroSoc(p : MicroSocParam) extends Component {
       uart.node at 0x10001000 of bus32
       plic.mapUpInterrupt(1, uart.interrupt)
 
+      val aes = new PeripheralAesWrapFiber()
+      aes.node at 0x10005000 of bus32 
+      
       val spiFlash = p.withSpiFlash generate new TilelinkSpiXdrMasterFiber(SpiXdrMasterCtrl.MemoryMappingParameters(
         SpiXdrMasterCtrl.Parameters(8, 12, SpiXdrParameter(2, 2, 1)).addFullDuplex(0,1,false),
         xipEnableInit = true,
