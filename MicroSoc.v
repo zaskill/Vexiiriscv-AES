@@ -1,6 +1,6 @@
-// Generator : SpinalHDL dev    git head : 79a2d1ca6f321e35e61ead147df27ce8e76c13dc
+// Generator : SpinalHDL dev    git head : 0f8d545ca2762f98c84caa1bdccd85e80af8f017
 // Component : MicroSoc
-// Git hash  : 79a2d1ca6f321e35e61ead147df27ce8e76c13dc
+// Git hash  : 0f8d545ca2762f98c84caa1bdccd85e80af8f017
 
 `timescale 1ns/1ps
 
@@ -5378,7 +5378,7 @@ module PeripheralAesCore (
     .test_done_o   (aes_test_done_o      )  //o
   );
 
-    ila_1 ila_1(
+     ila_1 ila_1(
     .clk(io_clk),
     .probe0(aes_aes_output),
     .probe1(aes_test_done_o),
@@ -5392,6 +5392,7 @@ module PeripheralAesCore (
     .probe9(start)
 
   );
+
 
   `ifndef SYNTHESIS
   always @(*) begin

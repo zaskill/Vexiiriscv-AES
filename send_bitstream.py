@@ -26,5 +26,5 @@ with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=2) as ser:
         print(f"[TX] Block {i//block_size:02d}: {framed_block.hex().upper()}")
 
         # Read response line (decrypted output)
-        line = ser.readline()
-        print(f"[RX] {line.decode(errors='ignore').strip()}")
+        #print(ser.readline())
+  
