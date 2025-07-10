@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/app/aes
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/app/aes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

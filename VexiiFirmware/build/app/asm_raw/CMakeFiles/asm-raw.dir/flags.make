@@ -6,5 +6,5 @@ ASM_DEFINES =
 
 ASM_INCLUDES = 
 
-ASM_FLAGS = -march=rv32i -mabi=ilp32 -ffunction-sections -fdata-sections -Wall -Wextra -pedantic -I/nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default -I/nobackup/Vexiiriscv-AES/vexiifirmware/device/microsoc_sim
+ASM_FLAGS = -march=rv32i -mabi=ilp32 -ffunction-sections -fdata-sections -Wall -Wextra -pedantic -I/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default -I/nobackup/Vexiiriscv-AES/VexiiFirmware/device/microsoc_sim
 

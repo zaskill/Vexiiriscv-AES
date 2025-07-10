@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware
+CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware/build
+CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/asm_raw//CMakeFiles/progress.marks
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/asm_raw//CMakeFiles/progress.marks
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/clean
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/preinstall
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/preinstall
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 app/asm_raw/CMakeFiles/asm-raw.dir/rule:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/CMakeFiles/asm-raw.dir/rule
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/CMakeFiles/asm-raw.dir/rule
 .PHONY : app/asm_raw/CMakeFiles/asm-raw.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ asm-raw: app/asm_raw/CMakeFiles/asm-raw.dir/rule
 
 # fast build rule for target.
 asm-raw/fast:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/asm_raw/CMakeFiles/asm-raw.dir/build.make app/asm_raw/CMakeFiles/asm-raw.dir/build
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/asm_raw/CMakeFiles/asm-raw.dir/build.make app/asm_raw/CMakeFiles/asm-raw.dir/build
 .PHONY : asm-raw/fast
 
 start.obj: start.S.obj
@@ -135,7 +135,7 @@ start.obj: start.S.obj
 
 # target to build an object file
 start.S.obj:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/asm_raw/CMakeFiles/asm-raw.dir/build.make app/asm_raw/CMakeFiles/asm-raw.dir/start.S.obj
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/asm_raw/CMakeFiles/asm-raw.dir/build.make app/asm_raw/CMakeFiles/asm-raw.dir/start.S.obj
 .PHONY : start.S.obj
 
 # Help Target
@@ -159,6 +159,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

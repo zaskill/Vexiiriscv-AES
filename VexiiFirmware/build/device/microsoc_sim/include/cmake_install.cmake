@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/device/microsoc_sim/include
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/device/microsoc_sim/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

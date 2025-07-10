@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/riscv
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/riscv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/common/hal/riscv/plic/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/common/hal/riscv/plic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/common/hal/riscv/clint/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/common/hal/riscv/clint/cmake_install.cmake")
 endif()
 

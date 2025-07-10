@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/app/uart
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/app/uart
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

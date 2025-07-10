@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/riscv/clint
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/riscv/clint
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

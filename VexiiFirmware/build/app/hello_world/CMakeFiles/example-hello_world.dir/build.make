@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware
+CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware/build
+CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware/build
 
 # Include any dependencies generated for this target.
 include app/hello_world/CMakeFiles/example-hello_world.dir/depend.make
@@ -70,72 +70,72 @@ include app/hello_world/CMakeFiles/example-hello_world.dir/progress.make
 include app/hello_world/CMakeFiles/example-hello_world.dir/flags.make
 
 app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj: app/hello_world/CMakeFiles/example-hello_world.dir/flags.make
-app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/app/hello_world/main.cpp
+app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/app/hello_world/main.cpp
 app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj: app/hello_world/CMakeFiles/example-hello_world.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj -MF CMakeFiles/example-hello_world.dir/main.cpp.obj.d -o CMakeFiles/example-hello_world.dir/main.cpp.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/app/hello_world/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj -MF CMakeFiles/example-hello_world.dir/main.cpp.obj.d -o CMakeFiles/example-hello_world.dir/main.cpp.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/app/hello_world/main.cpp
 
 app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-hello_world.dir/main.cpp.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/app/hello_world/main.cpp > CMakeFiles/example-hello_world.dir/main.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/app/hello_world/main.cpp > CMakeFiles/example-hello_world.dir/main.cpp.i
 
 app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-hello_world.dir/main.cpp.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/app/hello_world/main.cpp -o CMakeFiles/example-hello_world.dir/main.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/app/hello_world/main.cpp -o CMakeFiles/example-hello_world.dir/main.cpp.s
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj: app/hello_world/CMakeFiles/example-hello_world.dir/flags.make
-app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S
+app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S > CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S > CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.i
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S -o CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S -o CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.s
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj: app/hello_world/CMakeFiles/example-hello_world.dir/flags.make
-app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S
+app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S > CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S > CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.i
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.s
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj: app/hello_world/CMakeFiles/example-hello_world.dir/flags.make
-app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp
+app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj: app/hello_world/CMakeFiles/example-hello_world.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj -MF CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj.d -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj -MF CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj.d -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp > CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp > CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.i
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp -o CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.s
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: app/hello_world/CMakeFiles/example-hello_world.dir/flags.make
-app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp
+app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: app/hello_world/CMakeFiles/example-hello_world.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -MF CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj.d -o CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -MF CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj.d -o CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp > CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp > CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.i
 
 app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp -o CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp -o CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.s
 
 # Object files for target example-hello_world
 example__hello_world_OBJECTS = \
@@ -155,18 +155,18 @@ app/hello_world/example-hello_world.elf: app/hello_world/CMakeFiles/example-hell
 app/hello_world/example-hello_world.elf: app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
 app/hello_world/example-hello_world.elf: app/hello_world/CMakeFiles/example-hello_world.dir/build.make
 app/hello_world/example-hello_world.elf: app/hello_world/CMakeFiles/example-hello_world.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable example-hello_world.elf"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example-hello_world.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable example-hello_world.elf"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example-hello_world.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 app/hello_world/CMakeFiles/example-hello_world.dir/build: app/hello_world/example-hello_world.elf
 .PHONY : app/hello_world/CMakeFiles/example-hello_world.dir/build
 
 app/hello_world/CMakeFiles/example-hello_world.dir/clean:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world && $(CMAKE_COMMAND) -P CMakeFiles/example-hello_world.dir/cmake_clean.cmake
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world && $(CMAKE_COMMAND) -P CMakeFiles/example-hello_world.dir/cmake_clean.cmake
 .PHONY : app/hello_world/CMakeFiles/example-hello_world.dir/clean
 
 app/hello_world/CMakeFiles/example-hello_world.dir/depend:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nobackup/Vexiiriscv-AES/vexiifirmware /nobackup/Vexiiriscv-AES/vexiifirmware/app/hello_world /nobackup/Vexiiriscv-AES/vexiifirmware/build /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world/CMakeFiles/example-hello_world.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nobackup/Vexiiriscv-AES/VexiiFirmware /nobackup/Vexiiriscv-AES/VexiiFirmware/app/hello_world /nobackup/Vexiiriscv-AES/VexiiFirmware/build /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world/CMakeFiles/example-hello_world.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : app/hello_world/CMakeFiles/example-hello_world.dir/depend
 

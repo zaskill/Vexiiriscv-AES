@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,22 +39,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/device/microsoc_sim/include/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/device/microsoc_sim/include/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/soc/microsoc/default/system/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/soc/microsoc/default/system/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/common/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/nobackup/Vexiiriscv-AES/vexiifirmware/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/nobackup/Vexiiriscv-AES/VexiiFirmware/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

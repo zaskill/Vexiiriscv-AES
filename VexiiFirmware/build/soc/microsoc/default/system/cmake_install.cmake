@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware
+CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware/build
+CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -387,14 +387,14 @@ soc/microsoc/default/system/clean:
 app/hello_world/CMakeFiles/example-hello_world.dir/all:
 	$(MAKE) $(MAKESILENT) -f app/hello_world/CMakeFiles/example-hello_world.dir/build.make app/hello_world/CMakeFiles/example-hello_world.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/hello_world/CMakeFiles/example-hello_world.dir/build.make app/hello_world/CMakeFiles/example-hello_world.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=21,22,23,24,25,26 "Built target example-hello_world"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=21,22,23,24,25,26 "Built target example-hello_world"
 .PHONY : app/hello_world/CMakeFiles/example-hello_world.dir/all
 
 # Build rule for subdir invocation for target.
 app/hello_world/CMakeFiles/example-hello_world.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/hello_world/CMakeFiles/example-hello_world.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : app/hello_world/CMakeFiles/example-hello_world.dir/rule
 
 # Convenience name for target.
@@ -413,14 +413,14 @@ app/hello_world/CMakeFiles/example-hello_world.dir/clean:
 app/uart/CMakeFiles/example-uart.dir/all:
 	$(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=27,28,29,30,31,32 "Built target example-uart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=27,28,29,30,31,32 "Built target example-uart"
 .PHONY : app/uart/CMakeFiles/example-uart.dir/all
 
 # Build rule for subdir invocation for target.
 app/uart/CMakeFiles/example-uart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/CMakeFiles/example-uart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : app/uart/CMakeFiles/example-uart.dir/rule
 
 # Convenience name for target.
@@ -439,14 +439,14 @@ app/uart/CMakeFiles/example-uart.dir/clean:
 app/asm_app/CMakeFiles/asm-app.dir/all:
 	$(MAKE) $(MAKESILENT) -f app/asm_app/CMakeFiles/asm-app.dir/build.make app/asm_app/CMakeFiles/asm-app.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/asm_app/CMakeFiles/asm-app.dir/build.make app/asm_app/CMakeFiles/asm-app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target asm-app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target asm-app"
 .PHONY : app/asm_app/CMakeFiles/asm-app.dir/all
 
 # Build rule for subdir invocation for target.
 app/asm_app/CMakeFiles/asm-app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_app/CMakeFiles/asm-app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : app/asm_app/CMakeFiles/asm-app.dir/rule
 
 # Convenience name for target.
@@ -465,14 +465,14 @@ app/asm_app/CMakeFiles/asm-app.dir/clean:
 app/asm_raw/CMakeFiles/asm-raw.dir/all:
 	$(MAKE) $(MAKESILENT) -f app/asm_raw/CMakeFiles/asm-raw.dir/build.make app/asm_raw/CMakeFiles/asm-raw.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/asm_raw/CMakeFiles/asm-raw.dir/build.make app/asm_raw/CMakeFiles/asm-raw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=7,8 "Built target asm-raw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=7,8 "Built target asm-raw"
 .PHONY : app/asm_raw/CMakeFiles/asm-raw.dir/all
 
 # Build rule for subdir invocation for target.
 app/asm_raw/CMakeFiles/asm-raw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/asm_raw/CMakeFiles/asm-raw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : app/asm_raw/CMakeFiles/asm-raw.dir/rule
 
 # Convenience name for target.
@@ -491,14 +491,14 @@ app/asm_raw/CMakeFiles/asm-raw.dir/clean:
 app/aes/CMakeFiles/example-aes.dir/all:
 	$(MAKE) $(MAKESILENT) -f app/aes/CMakeFiles/example-aes.dir/build.make app/aes/CMakeFiles/example-aes.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/aes/CMakeFiles/example-aes.dir/build.make app/aes/CMakeFiles/example-aes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target example-aes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target example-aes"
 .PHONY : app/aes/CMakeFiles/example-aes.dir/all
 
 # Build rule for subdir invocation for target.
 app/aes/CMakeFiles/example-aes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/aes/CMakeFiles/example-aes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : app/aes/CMakeFiles/example-aes.dir/rule
 
 # Convenience name for target.
@@ -517,14 +517,14 @@ app/aes/CMakeFiles/example-aes.dir/clean:
 app/bootloader/CMakeFiles/example-bootloader.dir/all:
 	$(MAKE) $(MAKESILENT) -f app/bootloader/CMakeFiles/example-bootloader.dir/build.make app/bootloader/CMakeFiles/example-bootloader.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/bootloader/CMakeFiles/example-bootloader.dir/build.make app/bootloader/CMakeFiles/example-bootloader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target example-bootloader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target example-bootloader"
 .PHONY : app/bootloader/CMakeFiles/example-bootloader.dir/all
 
 # Build rule for subdir invocation for target.
 app/bootloader/CMakeFiles/example-bootloader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/bootloader/CMakeFiles/example-bootloader.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : app/bootloader/CMakeFiles/example-bootloader.dir/rule
 
 # Convenience name for target.

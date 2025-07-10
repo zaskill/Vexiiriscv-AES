@@ -1,6 +1,6 @@
-// Generator : SpinalHDL dev    git head : 0f8d545ca2762f98c84caa1bdccd85e80af8f017
+// Generator : SpinalHDL dev    git head : 465ddfa3e796a7378d759cfdef60d0b22c37254b
 // Component : MicroSoc
-// Git hash  : 0f8d545ca2762f98c84caa1bdccd85e80af8f017
+// Git hash  : 465ddfa3e796a7378d759cfdef60d0b22c37254b
 
 `timescale 1ns/1ps
 
@@ -22,7 +22,7 @@ module MicroSoc (
   output wire          system_peripheral_uart_logic_uart_txd,
   input  wire          system_peripheral_uart_logic_uart_rxd,
   output wire [127:0]  system_peripheral_aes_logic_aes_output,
-  output wire          system_peripheral_aes_logic_test_done,
+  output wire          system_peripheral_aes_logic_data_valid,
   output wire [7:0]    system_peripheral_demo_logic_leds,
   input  wire [3:0]    system_peripheral_demo_logic_buttons
 );
@@ -230,7 +230,7 @@ module MicroSoc (
   wire       [31:0]   system_peripheral_aes_logic_core_io_bus_d_payload_data;
   wire                system_peripheral_aes_logic_core_io_bus_d_payload_corrupt;
   wire       [127:0]  system_peripheral_aes_logic_core_io_aes_output;
-  wire                system_peripheral_aes_logic_core_io_test_done;
+  wire                system_peripheral_aes_logic_core_io_data_valid;
   wire                system_peripheral_demo_logic_core_io_bus_a_ready;
   wire                system_peripheral_demo_logic_core_io_bus_d_valid;
   wire       [2:0]    system_peripheral_demo_logic_core_io_bus_d_payload_opcode;
@@ -1548,7 +1548,7 @@ module MicroSoc (
     .io_bus_d_payload_data    (system_peripheral_aes_logic_core_io_bus_d_payload_data[31:0] ), //o
     .io_bus_d_payload_corrupt (system_peripheral_aes_logic_core_io_bus_d_payload_corrupt    ), //o
     .io_aes_output            (system_peripheral_aes_logic_core_io_aes_output[127:0]        ), //o
-    .io_test_done             (system_peripheral_aes_logic_core_io_test_done                ), //o
+    .io_data_valid            (system_peripheral_aes_logic_core_io_data_valid               ), //o
     .io_clk                   (socCtrl_systemClk                                            ), //i
     .io_reset                 (socCtrl_system_reset                                         ), //i
     .socCtrl_systemClk        (socCtrl_systemClk                                            ), //i
@@ -2949,7 +2949,7 @@ module MicroSoc (
   assign system_peripheral_aes_node_bus_d_payload_data = system_peripheral_aes_logic_core_io_bus_d_payload_data;
   assign system_peripheral_aes_node_bus_d_payload_corrupt = system_peripheral_aes_logic_core_io_bus_d_payload_corrupt;
   assign system_peripheral_aes_logic_aes_output = system_peripheral_aes_logic_core_io_aes_output;
-  assign system_peripheral_aes_logic_test_done = system_peripheral_aes_logic_core_io_test_done;
+  assign system_peripheral_aes_logic_data_valid = system_peripheral_aes_logic_core_io_data_valid;
   assign system_peripheral_demo_node_bus_a_ready = system_peripheral_demo_logic_core_io_bus_a_ready;
   assign system_peripheral_demo_node_bus_d_valid = system_peripheral_demo_logic_core_io_bus_d_valid;
   assign system_peripheral_demo_node_bus_d_payload_opcode = system_peripheral_demo_logic_core_io_bus_d_payload_opcode;
@@ -5305,7 +5305,7 @@ module PeripheralAesCore (
   output wire [31:0]   io_bus_d_payload_data,
   output wire          io_bus_d_payload_corrupt,
   output wire [127:0]  io_aes_output,
-  output wire          io_test_done,
+  output wire          io_data_valid,
   input  wire          io_clk,
   input  wire          io_reset,
   input  wire          socCtrl_systemClk,
@@ -5326,38 +5326,34 @@ module PeripheralAesCore (
   wire       [127:0]  aes_aes_output;
   wire                aes_alert_recov_o;
   wire                aes_alert_fatal_o;
-  wire                aes_test_done_o;
+  wire                aes_data_valid;
   reg        [127:0]  inputData;
   reg        [255:0]  keyData;
   reg        [127:0]  aesOutput;
   reg        [127:0]  aesIv;
   reg                 decryptModeReg;
   reg                 startReg;
-  reg                 testDoneRaw;
-  reg                 testDonePrev;
-  wire                testDone;
-  reg                 startReg_regNext;
-  wire                startPulse;
+  wire                dataValid;
   wire       [9:0]    address;
   reg        [31:0]   rdata;
+  wire                when_PeripheralAesWrapFiber_l81;
+  wire                when_PeripheralAesWrapFiber_l82;
+  wire                when_PeripheralAesWrapFiber_l83;
+  wire                when_PeripheralAesWrapFiber_l84;
+  wire                when_PeripheralAesWrapFiber_l87;
+  wire                when_PeripheralAesWrapFiber_l88;
   wire                when_PeripheralAesWrapFiber_l89;
   wire                when_PeripheralAesWrapFiber_l90;
   wire                when_PeripheralAesWrapFiber_l91;
   wire                when_PeripheralAesWrapFiber_l92;
-  wire                when_PeripheralAesWrapFiber_l95;
-  wire                when_PeripheralAesWrapFiber_l96;
-  wire                when_PeripheralAesWrapFiber_l97;
-  wire                when_PeripheralAesWrapFiber_l98;
-  wire                when_PeripheralAesWrapFiber_l99;
-  wire                when_PeripheralAesWrapFiber_l100;
-  wire                when_PeripheralAesWrapFiber_l101;
-  wire                when_PeripheralAesWrapFiber_l102;
+  wire                when_PeripheralAesWrapFiber_l93;
+  wire                when_PeripheralAesWrapFiber_l94;
+  wire                when_PeripheralAesWrapFiber_l107;
   wire                when_PeripheralAesWrapFiber_l115;
+  wire                when_PeripheralAesWrapFiber_l116;
+  wire                when_PeripheralAesWrapFiber_l117;
+  wire                when_PeripheralAesWrapFiber_l118;
   wire                when_PeripheralAesWrapFiber_l123;
-  wire                when_PeripheralAesWrapFiber_l124;
-  wire                when_PeripheralAesWrapFiber_l125;
-  wire                when_PeripheralAesWrapFiber_l126;
-  wire                when_PeripheralAesWrapFiber_l130;
   `ifndef SYNTHESIS
   reg [127:0] io_bus_a_payload_opcode_string;
   reg [119:0] io_bus_d_payload_opcode_string;
@@ -5371,11 +5367,11 @@ module PeripheralAesCore (
     .aes_key       (keyData[255:0]       ), //i
     .aes_decrypt_i (decryptModeReg       ), //i
     .aes_iv        (aesIv[127:0]         ), //i
-    .start         (startPulse           ), //i
+    .start         (startReg             ), //i
     .aes_output    (aes_aes_output[127:0]), //o
     .alert_recov_o (aes_alert_recov_o    ), //o
     .alert_fatal_o (aes_alert_fatal_o    ), //o
-    .test_done_o   (aes_test_done_o      )  //o
+    .data_valid    (aes_data_valid       )  //o
   );
 
      ila_1 ila_1(
@@ -5389,11 +5385,9 @@ module PeripheralAesCore (
     .probe6(keyData),
     .probe7(decryptModeReg),
     .probe8(aesIv),
-    .probe9(startPulse)
+    .probe9(startReg)
 
   );
-
-
   `ifndef SYNTHESIS
   always @(*) begin
     case(io_bus_a_payload_opcode)
@@ -5418,71 +5412,70 @@ module PeripheralAesCore (
   `endif
 
   assign aes_rst_ni = (! io_reset);
-  assign testDone = (testDoneRaw && (! testDonePrev));
-  assign startPulse = (startReg && (! startReg_regNext));
+  assign dataValid = aes_data_valid;
   assign io_aes_output = aesOutput;
-  assign io_test_done = testDone;
+  assign io_data_valid = dataValid;
   assign address = io_bus_a_payload_address[11 : 2];
   always @(*) begin
     rdata = 32'h0;
     case(address)
       10'h001 : begin
-        if(!when_PeripheralAesWrapFiber_l89) begin
+        if(!when_PeripheralAesWrapFiber_l81) begin
           rdata = inputData[31 : 0];
         end
       end
       10'h002 : begin
-        if(!when_PeripheralAesWrapFiber_l90) begin
+        if(!when_PeripheralAesWrapFiber_l82) begin
           rdata = inputData[63 : 32];
         end
       end
       10'h003 : begin
-        if(!when_PeripheralAesWrapFiber_l91) begin
+        if(!when_PeripheralAesWrapFiber_l83) begin
           rdata = inputData[95 : 64];
         end
       end
       10'h004 : begin
-        if(!when_PeripheralAesWrapFiber_l92) begin
+        if(!when_PeripheralAesWrapFiber_l84) begin
           rdata = inputData[127 : 96];
         end
       end
       10'h005 : begin
-        if(!when_PeripheralAesWrapFiber_l95) begin
+        if(!when_PeripheralAesWrapFiber_l87) begin
           rdata = keyData[31 : 0];
         end
       end
       10'h006 : begin
-        if(!when_PeripheralAesWrapFiber_l96) begin
+        if(!when_PeripheralAesWrapFiber_l88) begin
           rdata = keyData[63 : 32];
         end
       end
       10'h007 : begin
-        if(!when_PeripheralAesWrapFiber_l97) begin
+        if(!when_PeripheralAesWrapFiber_l89) begin
           rdata = keyData[95 : 64];
         end
       end
       10'h008 : begin
-        if(!when_PeripheralAesWrapFiber_l98) begin
+        if(!when_PeripheralAesWrapFiber_l90) begin
           rdata = keyData[127 : 96];
         end
       end
       10'h009 : begin
-        if(!when_PeripheralAesWrapFiber_l99) begin
+        if(!when_PeripheralAesWrapFiber_l91) begin
           rdata = keyData[159 : 128];
         end
       end
       10'h00a : begin
-        if(!when_PeripheralAesWrapFiber_l100) begin
+        if(!when_PeripheralAesWrapFiber_l92) begin
           rdata = keyData[191 : 160];
         end
       end
       10'h00b : begin
-        if(!when_PeripheralAesWrapFiber_l101) begin
+        if(!when_PeripheralAesWrapFiber_l93) begin
           rdata = keyData[223 : 192];
         end
       end
       10'h00c : begin
-        if(!when_PeripheralAesWrapFiber_l102) begin
+        if(!when_PeripheralAesWrapFiber_l94) begin
           rdata = keyData[255 : 224];
         end
       end
@@ -5499,31 +5492,36 @@ module PeripheralAesCore (
         rdata = aesOutput[127 : 96];
       end
       10'h012 : begin
-        rdata = {31'h0,testDone};
+        rdata = {31'h0,dataValid};
       end
       10'h013 : begin
-        if(!when_PeripheralAesWrapFiber_l115) begin
+        if(!when_PeripheralAesWrapFiber_l107) begin
           rdata = {31'h0,decryptModeReg};
         end
       end
       10'h014 : begin
-        if(!when_PeripheralAesWrapFiber_l123) begin
+        if(!when_PeripheralAesWrapFiber_l115) begin
           rdata = aesIv[31 : 0];
         end
       end
       10'h015 : begin
-        if(!when_PeripheralAesWrapFiber_l124) begin
+        if(!when_PeripheralAesWrapFiber_l116) begin
           rdata = aesIv[63 : 32];
         end
       end
       10'h016 : begin
-        if(!when_PeripheralAesWrapFiber_l125) begin
+        if(!when_PeripheralAesWrapFiber_l117) begin
           rdata = aesIv[95 : 64];
         end
       end
       10'h017 : begin
-        if(!when_PeripheralAesWrapFiber_l126) begin
+        if(!when_PeripheralAesWrapFiber_l118) begin
           rdata = aesIv[127 : 96];
+        end
+      end
+      10'h019 : begin
+        if(!when_PeripheralAesWrapFiber_l123) begin
+          rdata = {31'h0,startReg};
         end
       end
       default : begin
@@ -5540,24 +5538,24 @@ module PeripheralAesCore (
   assign io_bus_d_payload_denied = 1'b0;
   assign io_bus_d_payload_data = rdata;
   assign io_bus_d_payload_corrupt = 1'b0;
+  assign when_PeripheralAesWrapFiber_l81 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l82 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l83 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l84 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l87 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l88 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   assign when_PeripheralAesWrapFiber_l89 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   assign when_PeripheralAesWrapFiber_l90 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   assign when_PeripheralAesWrapFiber_l91 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   assign when_PeripheralAesWrapFiber_l92 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l95 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l96 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l97 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l98 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l99 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l100 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l101 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l102 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l93 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l94 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l107 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   assign when_PeripheralAesWrapFiber_l115 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l116 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l117 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
+  assign when_PeripheralAesWrapFiber_l118 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   assign when_PeripheralAesWrapFiber_l123 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l124 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l125 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l126 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
-  assign when_PeripheralAesWrapFiber_l130 = (io_bus_a_payload_opcode == A_PUT_FULL_DATA);
   always @(posedge socCtrl_systemClk or posedge socCtrl_system_reset) begin
     if(socCtrl_system_reset) begin
       inputData <= 128'h0;
@@ -5566,109 +5564,99 @@ module PeripheralAesCore (
       aesIv <= 128'h0;
       decryptModeReg <= 1'b0;
       startReg <= 1'b0;
-      testDoneRaw <= 1'b0;
-      testDonePrev <= 1'b0;
-      startReg_regNext <= 1'b0;
     end else begin
-      testDonePrev <= testDoneRaw;
-      startReg_regNext <= startReg;
-      if(startPulse) begin
-        startReg <= 1'b0;
-        testDoneRaw <= 1'b0;
-      end
-      if(aes_test_done_o) begin
+      if(aes_data_valid) begin
         aesOutput <= aes_aes_output;
-        testDoneRaw <= 1'b1;
       end
       case(address)
         10'h001 : begin
-          if(when_PeripheralAesWrapFiber_l89) begin
+          if(when_PeripheralAesWrapFiber_l81) begin
             inputData[31 : 0] <= io_bus_a_payload_data;
           end
         end
         10'h002 : begin
-          if(when_PeripheralAesWrapFiber_l90) begin
+          if(when_PeripheralAesWrapFiber_l82) begin
             inputData[63 : 32] <= io_bus_a_payload_data;
           end
         end
         10'h003 : begin
-          if(when_PeripheralAesWrapFiber_l91) begin
+          if(when_PeripheralAesWrapFiber_l83) begin
             inputData[95 : 64] <= io_bus_a_payload_data;
           end
         end
         10'h004 : begin
-          if(when_PeripheralAesWrapFiber_l92) begin
+          if(when_PeripheralAesWrapFiber_l84) begin
             inputData[127 : 96] <= io_bus_a_payload_data;
           end
         end
         10'h005 : begin
-          if(when_PeripheralAesWrapFiber_l95) begin
+          if(when_PeripheralAesWrapFiber_l87) begin
             keyData[31 : 0] <= io_bus_a_payload_data;
           end
         end
         10'h006 : begin
-          if(when_PeripheralAesWrapFiber_l96) begin
+          if(when_PeripheralAesWrapFiber_l88) begin
             keyData[63 : 32] <= io_bus_a_payload_data;
           end
         end
         10'h007 : begin
-          if(when_PeripheralAesWrapFiber_l97) begin
+          if(when_PeripheralAesWrapFiber_l89) begin
             keyData[95 : 64] <= io_bus_a_payload_data;
           end
         end
         10'h008 : begin
-          if(when_PeripheralAesWrapFiber_l98) begin
+          if(when_PeripheralAesWrapFiber_l90) begin
             keyData[127 : 96] <= io_bus_a_payload_data;
           end
         end
         10'h009 : begin
-          if(when_PeripheralAesWrapFiber_l99) begin
+          if(when_PeripheralAesWrapFiber_l91) begin
             keyData[159 : 128] <= io_bus_a_payload_data;
           end
         end
         10'h00a : begin
-          if(when_PeripheralAesWrapFiber_l100) begin
+          if(when_PeripheralAesWrapFiber_l92) begin
             keyData[191 : 160] <= io_bus_a_payload_data;
           end
         end
         10'h00b : begin
-          if(when_PeripheralAesWrapFiber_l101) begin
+          if(when_PeripheralAesWrapFiber_l93) begin
             keyData[223 : 192] <= io_bus_a_payload_data;
           end
         end
         10'h00c : begin
-          if(when_PeripheralAesWrapFiber_l102) begin
+          if(when_PeripheralAesWrapFiber_l94) begin
             keyData[255 : 224] <= io_bus_a_payload_data;
           end
         end
         10'h013 : begin
-          if(when_PeripheralAesWrapFiber_l115) begin
+          if(when_PeripheralAesWrapFiber_l107) begin
             decryptModeReg <= io_bus_a_payload_data[0];
           end
         end
         10'h014 : begin
-          if(when_PeripheralAesWrapFiber_l123) begin
+          if(when_PeripheralAesWrapFiber_l115) begin
             aesIv[31 : 0] <= io_bus_a_payload_data;
           end
         end
         10'h015 : begin
-          if(when_PeripheralAesWrapFiber_l124) begin
+          if(when_PeripheralAesWrapFiber_l116) begin
             aesIv[63 : 32] <= io_bus_a_payload_data;
           end
         end
         10'h016 : begin
-          if(when_PeripheralAesWrapFiber_l125) begin
+          if(when_PeripheralAesWrapFiber_l117) begin
             aesIv[95 : 64] <= io_bus_a_payload_data;
           end
         end
         10'h017 : begin
-          if(when_PeripheralAesWrapFiber_l126) begin
+          if(when_PeripheralAesWrapFiber_l118) begin
             aesIv[127 : 96] <= io_bus_a_payload_data;
           end
         end
         10'h019 : begin
-          if(when_PeripheralAesWrapFiber_l130) begin
-            startReg <= 1'b1;
+          if(when_PeripheralAesWrapFiber_l123) begin
+            startReg <= io_bus_a_payload_data[0];
           end
         end
         default : begin

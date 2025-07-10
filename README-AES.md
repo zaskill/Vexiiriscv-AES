@@ -11,6 +11,13 @@ Since both the hardware (e.g. peripheral integration) and software are actively 
 
 https://github.com/zaskill/Vexiiriscv-AES.git (CEA git instead ????)
 
+# Clone Opentitan Repository 
+
+It is necessary to clone the opentitan repository to get the necessary files for the AES HW IP.
+It is recommended to clone this repository outside the VEXIIRISCV-AES folder.
+
+https://github.com/lowRISC/opentitan.git
+
 # Opentitan AES IP extraction
 
 Fusesoc is used to extract the necessary RTL files for the AES IP.
@@ -36,13 +43,53 @@ The modified wrapper supports AES in CTR mode and introduces an aes_iv input por
 -Decryption Capability:
 Added aes_decrypt_i input to allow dynamic switching between encryption and decryption modes, supporting more flexible use cases.
 
--Pulse-Based Test Done
-The test_done_o signal is now a one-cycle pulse, which is asserted when the AES operation finishes and then automatically cleared, ensuring synchronization with the host software.
+-Pulse-Based Data_valid
+The data_valid signal is asserted when the AES operation finishes and then automatically cleared, ensuring synchronization with the host software.
 
 --The aes_wrap.sv file must be modified from its original version, as the I/O interface differs in the newer implementation !
 
 # Builduing Software
 
-To build software, this command can be used to compile the cpp files; all the Makefiles are already configured for the desired compilation.
+To build software, this command can be used to compile the cpp files, all the Makefiles are already configured for the desired compilation.
 
 cd Vexiifirmware
+rm -rf build && cmake -S . -B build -DSOC=microsoc/default -DDEVICE=microsoc_sim &&  make -C build example-aes
+
+# Building Hardware (Microsoc SOC)
+
+The Microsoc Soc is based on a Vexiiriscv RISCV processor with some basic peripherals (UART, RAM ...). 
+This SoC was modified in this project, and AES module from the Opentitan project was added as a peripheral, the vexiiriscv cpu can control the IP.
+
+The github of the original project : https://github.com/SpinalHDL/VexiiRiscv.git
+
+To build hardware, this command can be used to compile the scala files. 
+
+sbt "runMain vexiiriscv.soc.micro.MicroSocGen \
+  --ram-bytes 16384 \
+  --ram-elf "PATH_TO_REPO/Vexiiriscv-AES/VexiiFirmware/build/app/aes/example-aes.elf" \
+  --demo-peripheral leds=8,buttons=4 \
+  --xlen 32 \
+  --with-mul \
+  --with-div \
+  --with-rvm \
+  --system-frequency 100000000 \
+  --jtag-tap true \
+  --jtag-instruction true \
+  --reset-vector 0x80000000 \
+  --with-supervisor"
+
+Then the aes_wrap project generated with fusesoc should be opened and the following files located in Rtl_files should be added :
+-aes_wrap.sv (should replace the original)
+-top_microsoc.sv
+-fifo128to32.v
+
+After running the command above two files are generated and should be added to the project :
+
+-MicroSoc.v
+-soc.h
+
+# Partial reconfiguration
+
+To enable partial reconfiguration and bitstream generation, a document FPGA_partial_configuration_using_ICAP.pdf located in document folder can be helpful to enable reconfiguration and generate a partial bitstream for the desired design.
+
+

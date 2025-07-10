@@ -16,7 +16,7 @@ class AesWrapBlackBox extends BlackBox {
     val aes_output    = out Bits(128 bits)
     val alert_recov_o = out Bool()
     val alert_fatal_o = out Bool()
-    val test_done_o   = out Bool()
+    val data_valid   = out Bool()
   }
 
   noIoPrefix() //le module Verilog n'utilise pas le préfixe "io_"

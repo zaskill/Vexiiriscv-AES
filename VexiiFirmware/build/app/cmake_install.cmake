@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/app
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,31 +39,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/uart/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/uart/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/asm_app/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/asm_app/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/asm_raw/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/asm_raw/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/aes/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/aes/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader/cmake_install.cmake")
+  include("/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader/cmake_install.cmake")
 endif()
 

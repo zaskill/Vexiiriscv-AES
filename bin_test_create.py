@@ -1,11 +1,11 @@
-
 from pathlib import Path
+import secrets  # Or use: import os
 
 # Output path
 output_file = Path("test_input.bin")
 
-# 16 bytes of value 0x66
-data = bytes([0x22] * 1600)
+# Generate 16 random bytes
+data = secrets.token_bytes(16)  # Or: os.urandom(16)
 
 # Write to file
 output_file.write_bytes(data)

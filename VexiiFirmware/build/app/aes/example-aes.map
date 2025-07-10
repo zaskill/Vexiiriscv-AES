@@ -540,7 +540,7 @@ LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libg
                 0x80000000                _start
                 0x80000064                _init
 
-.text           0x80000068     0x14fc
+.text           0x80000068     0x14e8
  *(.text.unlikely .text.unlikely.*)
  *(.text.startup .text.startup.*)
  *(.text .text.*)
@@ -591,165 +591,165 @@ LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libg
                 0x800004a0                hal::spinal::uart::read(std::span<std::byte, 4294967295u>)
  .text._ZZ4mainENKUlPKcPKmiE_clES0_S2_i
                 0x80000560      0x1a4 CMakeFiles/example-aes.dir/main.cpp.obj
- .text.main     0x80000704      0x3f4 CMakeFiles/example-aes.dir/main.cpp.obj
+ .text.main     0x80000704      0x3e0 CMakeFiles/example-aes.dir/main.cpp.obj
                 0x80000704                main
  .text._ZNKSt4spanIKSt4byteLj4294967295EE5beginEv
-                0x80000af8       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000af8                std::span<std::byte const, 4294967295u>::begin() const
+                0x80000ae4       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000ae4                std::span<std::byte const, 4294967295u>::begin() const
  .text._ZNKSt4spanIKSt4byteLj4294967295EE3endEv
-                0x80000b38       0x64 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000b38                std::span<std::byte const, 4294967295u>::end() const
+                0x80000b24       0x64 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000b24                std::span<std::byte const, 4294967295u>::end() const
  .text._ZN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS2_Lj4294967295EEEppEv
-                0x80000b9c       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000b9c                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::operator++()
+                0x80000b88       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000b88                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::operator++()
  .text._ZNKSt4spanISt4byteLj4294967295EE5beginEv
-                0x80000bdc       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000bdc                std::span<std::byte, 4294967295u>::begin() const
+                0x80000bc8       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000bc8                std::span<std::byte, 4294967295u>::begin() const
  .text._ZNKSt4spanISt4byteLj4294967295EE3endEv
-                0x80000c1c       0x64 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000c1c                std::span<std::byte, 4294967295u>::end() const
+                0x80000c08       0x64 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000c08                std::span<std::byte, 4294967295u>::end() const
  .text._ZN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS1_Lj4294967295EEEppEv
-                0x80000c80       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000c80                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::operator++()
+                0x80000c6c       0x40 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000c6c                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::operator++()
  .text._ZNSt4spanIKSt4byteLj4294967295EEC2IPS1_EET_j
-                0x80000cc0       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000cc0                std::span<std::byte const, 4294967295u>::span<std::byte const*>(std::byte const*, unsigned int)
-                0x80000cc0                std::span<std::byte const, 4294967295u>::span<std::byte const*>(std::byte const*, unsigned int)
+                0x80000cac       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000cac                std::span<std::byte const, 4294967295u>::span<std::byte const*>(std::byte const*, unsigned int)
+                0x80000cac                std::span<std::byte const, 4294967295u>::span<std::byte const*>(std::byte const*, unsigned int)
  .text._ZNSt4spanIKSt4byteLj4294967295EEC2IPS0_EET_j
-                0x80000d18       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000d18                std::span<std::byte const, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
-                0x80000d18                std::span<std::byte const, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000d04       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000d04                std::span<std::byte const, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000d04                std::span<std::byte const, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
  .text._ZSt10to_addressIKcEPT_S2_
-                0x80000d70       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000d70                char const* std::to_address<char const>(char const*)
+                0x80000d5c       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000d5c                char const* std::to_address<char const>(char const*)
  .text._ZNSt4spanIKcLj39EEC2IPS0_EET_j
-                0x80000da4       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000da4                std::span<char const, 39u>::span<char const*>(char const*, unsigned int)
-                0x80000da4                std::span<char const, 39u>::span<char const*>(char const*, unsigned int)
+                0x80000d90       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000d90                std::span<char const, 39u>::span<char const*>(char const*, unsigned int)
+                0x80000d90                std::span<char const, 39u>::span<char const*>(char const*, unsigned int)
  .text._ZSt12__to_addressIKcEPT_S2_
-                0x80000df8       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000df8                char const* std::__to_address<char const>(char const*)
+                0x80000de4       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000de4                char const* std::__to_address<char const>(char const*)
  .text._ZNSt4spanIKcLj39EEC2ILj39EEERAT__S0_
-                0x80000e24       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000e24                std::span<char const, 39u>::span<39u>(char const (&) [39u])
-                0x80000e24                std::span<char const, 39u>::span<39u>(char const (&) [39u])
+                0x80000e10       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000e10                std::span<char const, 39u>::span<39u>(char const (&) [39u])
+                0x80000e10                std::span<char const, 39u>::span<39u>(char const (&) [39u])
  .text._ZNSt8__detail16__extent_storageILj39EE9_M_extentEv
-                0x80000e60       0x28 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000e60                std::__detail::__extent_storage<39u>::_M_extent()
+                0x80000e4c       0x28 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000e4c                std::__detail::__extent_storage<39u>::_M_extent()
  .text._ZSt8as_bytesIKcLj39EESt4spanIKSt4byteXquneT0_L_ZSt14dynamic_extentEmlT0_stT_L_ZSt14dynamic_extentEEES1_IS4_XT0_EE
-                0x80000e88       0x60 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000e88                std::span<std::byte const, ((39u)!=std::dynamic_extent)?((39u)*(sizeof (char const))) : std::dynamic_extent> std::as_bytes<char const, 39u>(std::span<char const, 39u>)
+                0x80000e74       0x60 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000e74                std::span<std::byte const, ((39u)!=std::dynamic_extent)?((39u)*(sizeof (char const))) : std::dynamic_extent> std::as_bytes<char const, 39u>(std::span<char const, 39u>)
  .text._ZNKSt4spanIKSt4byteLj39EE4sizeEv
-                0x80000ee8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000ee8                std::span<std::byte const, 39u>::size() const
+                0x80000ed4       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000ed4                std::span<std::byte const, 39u>::size() const
  .text._ZNSt4spanIKSt4byteLj4294967295EEC2IS1_Lj39EEERKS_IT_XT0_EE
-                0x80000f18       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000f18                std::span<std::byte const, 4294967295u>::span<std::byte const, 39u>(std::span<std::byte const, 39u> const&)
-                0x80000f18                std::span<std::byte const, 4294967295u>::span<std::byte const, 39u>(std::span<std::byte const, 39u> const&)
+                0x80000f04       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000f04                std::span<std::byte const, 4294967295u>::span<std::byte const, 39u>(std::span<std::byte const, 39u> const&)
+                0x80000f04                std::span<std::byte const, 4294967295u>::span<std::byte const, 39u>(std::span<std::byte const, 39u> const&)
  .text._ZNSt4spanISt4byteLj4294967295EEC2IPS0_EET_j
-                0x80000f80       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000f80                std::span<std::byte, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
-                0x80000f80                std::span<std::byte, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000f6c       0x58 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000f6c                std::span<std::byte, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000f6c                std::span<std::byte, 4294967295u>::span<std::byte*>(std::byte*, unsigned int)
  .text._ZSt10to_addressISt4byteEPT_S2_
-                0x80000fd8       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80000fd8                std::byte* std::to_address<std::byte>(std::byte*)
+                0x80000fc4       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000fc4                std::byte* std::to_address<std::byte>(std::byte*)
  .text._ZNSt4spanISt4byteLj16EEC2IPS0_EET_j
-                0x8000100c       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x8000100c                std::span<std::byte, 16u>::span<std::byte*>(std::byte*, unsigned int)
-                0x8000100c                std::span<std::byte, 16u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000ff8       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80000ff8                std::span<std::byte, 16u>::span<std::byte*>(std::byte*, unsigned int)
+                0x80000ff8                std::span<std::byte, 16u>::span<std::byte*>(std::byte*, unsigned int)
  .text._ZSt12__to_addressISt4byteEPT_S2_
-                0x80001060       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80001060                std::byte* std::__to_address<std::byte>(std::byte*)
+                0x8000104c       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000104c                std::byte* std::__to_address<std::byte>(std::byte*)
  .text._ZNSt4spanISt4byteLj16EEC2ILj16EEERAT__S0_
-                0x8000108c       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x8000108c                std::span<std::byte, 16u>::span<16u>(std::byte (&) [16u])
-                0x8000108c                std::span<std::byte, 16u>::span<16u>(std::byte (&) [16u])
+                0x80001078       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001078                std::span<std::byte, 16u>::span<16u>(std::byte (&) [16u])
+                0x80001078                std::span<std::byte, 16u>::span<16u>(std::byte (&) [16u])
  .text._ZNKSt4spanISt4byteLj16EE4sizeEv
-                0x800010c8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800010c8                std::span<std::byte, 16u>::size() const
+                0x800010b4       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800010b4                std::span<std::byte, 16u>::size() const
  .text._ZNSt8__detail16__extent_storageILj16EE9_M_extentEv
-                0x800010f8       0x28 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800010f8                std::__detail::__extent_storage<16u>::_M_extent()
+                0x800010e4       0x28 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800010e4                std::__detail::__extent_storage<16u>::_M_extent()
  .text._ZNSt4spanISt4byteLj4294967295EEC2IS0_Lj16EEERKS_IT_XT0_EE
-                0x80001120       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80001120                std::span<std::byte, 4294967295u>::span<std::byte, 16u>(std::span<std::byte, 16u> const&)
-                0x80001120                std::span<std::byte, 4294967295u>::span<std::byte, 16u>(std::span<std::byte, 16u> const&)
+                0x8000110c       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x8000110c                std::span<std::byte, 4294967295u>::span<std::byte, 16u>(std::span<std::byte, 16u> const&)
+                0x8000110c                std::span<std::byte, 4294967295u>::span<std::byte, 16u>(std::span<std::byte, 16u> const&)
  .text._ZN9__gnu_cxx17__normal_iteratorIPKSt4byteSt4spanIS2_Lj4294967295EEEC2ERKS3_
-                0x80001188       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80001188                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::__normal_iterator(std::byte const* const&)
-                0x80001188                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::__normal_iterator(std::byte const* const&)
+                0x80001174       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001174                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::__normal_iterator(std::byte const* const&)
+                0x80001174                __gnu_cxx::__normal_iterator<std::byte const*, std::span<std::byte const, 4294967295u> >::__normal_iterator(std::byte const* const&)
  .text._ZNKSt4spanIKSt4byteLj4294967295EE4sizeEv
-                0x800011c4       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800011c4                std::span<std::byte const, 4294967295u>::size() const
+                0x800011b0       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800011b0                std::span<std::byte const, 4294967295u>::size() const
  .text._ZN9__gnu_cxx17__normal_iteratorIPSt4byteSt4spanIS1_Lj4294967295EEEC2ERKS2_
-                0x80001200       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80001200                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::__normal_iterator(std::byte* const&)
-                0x80001200                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::__normal_iterator(std::byte* const&)
+                0x800011ec       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800011ec                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::__normal_iterator(std::byte* const&)
+                0x800011ec                __gnu_cxx::__normal_iterator<std::byte*, std::span<std::byte, 4294967295u> >::__normal_iterator(std::byte* const&)
  .text._ZNKSt4spanISt4byteLj4294967295EE4sizeEv
-                0x8000123c       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x8000123c                std::span<std::byte, 4294967295u>::size() const
+                0x80001228       0x3c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001228                std::span<std::byte, 4294967295u>::size() const
  .text._ZSt10to_addressIKSt4byteEPT_S3_
-                0x80001278       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80001278                std::byte const* std::to_address<std::byte const>(std::byte const*)
+                0x80001264       0x34 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001264                std::byte const* std::to_address<std::byte const>(std::byte const*)
  .text._ZNSt8__detail16__extent_storageILj39EEC2Ej
-                0x800012ac       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800012ac                std::__detail::__extent_storage<39u>::__extent_storage(unsigned int)
-                0x800012ac                std::__detail::__extent_storage<39u>::__extent_storage(unsigned int)
+                0x80001298       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001298                std::__detail::__extent_storage<39u>::__extent_storage(unsigned int)
+                0x80001298                std::__detail::__extent_storage<39u>::__extent_storage(unsigned int)
  .text._ZNKSt4spanIKcLj39EE4dataEv
-                0x800012d8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800012d8                std::span<char const, 39u>::data() const
+                0x800012c4       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800012c4                std::span<char const, 39u>::data() const
  .text._ZNSt4spanIKSt4byteLj39EEC2IPS1_EET_j
-                0x80001308       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x80001308                std::span<std::byte const, 39u>::span<std::byte const*>(std::byte const*, unsigned int)
-                0x80001308                std::span<std::byte const, 39u>::span<std::byte const*>(std::byte const*, unsigned int)
+                0x800012f4       0x54 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800012f4                std::span<std::byte const, 39u>::span<std::byte const*>(std::byte const*, unsigned int)
+                0x800012f4                std::span<std::byte const, 39u>::span<std::byte const*>(std::byte const*, unsigned int)
  .text._ZNKSt4spanIKSt4byteLj39EE4dataEv
-                0x8000135c       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x8000135c                std::span<std::byte const, 39u>::data() const
+                0x80001348       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001348                std::span<std::byte const, 39u>::data() const
  .text._ZNSt8__detail16__extent_storageILj16EEC2Ej
-                0x8000138c       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x8000138c                std::__detail::__extent_storage<16u>::__extent_storage(unsigned int)
-                0x8000138c                std::__detail::__extent_storage<16u>::__extent_storage(unsigned int)
+                0x80001378       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001378                std::__detail::__extent_storage<16u>::__extent_storage(unsigned int)
+                0x80001378                std::__detail::__extent_storage<16u>::__extent_storage(unsigned int)
  .text._ZNKSt4spanISt4byteLj16EE4dataEv
-                0x800013b8       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800013b8                std::span<std::byte, 16u>::data() const
+                0x800013a4       0x30 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800013a4                std::span<std::byte, 16u>::data() const
  .text._ZSt12__to_addressIKSt4byteEPT_S3_
-                0x800013e8       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
-                0x800013e8                std::byte const* std::__to_address<std::byte const>(std::byte const*)
+                0x800013d4       0x2c CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800013d4                std::byte const* std::__to_address<std::byte const>(std::byte const*)
  .text._ZN3soc4initEv
-                0x80001414       0x28 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
-                0x80001414                soc::init()
+                0x80001400       0x28 CMakeFiles/example-aes.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+                0x80001400                soc::init()
  .text.__libc_init_array
-                0x8000143c       0x9c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
-                0x8000143c                __libc_init_array
- .text.strlen   0x800014d8       0x8c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
-                0x800014d8                strlen
+                0x80001428       0x9c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-init.o)
+                0x80001428                __libc_init_array
+ .text.strlen   0x800014c4       0x8c /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/lib/rv32i/ilp32/libc.a(libc_a-strlen.o)
+                0x800014c4                strlen
  *(.gnu.linkonce.t.*)
  *(.note.gnu.build-id)
 
-.rela.dyn       0x80001564        0x0
- .rela.init     0x80001564        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+.rela.dyn       0x80001550        0x0
+ .rela.init     0x80001550        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
  .rela.text.__libc_init_array
-                0x80001564        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x80001550        0x0 CMakeFiles/example-aes.dir/main.cpp.obj
 
 .fini
  *(SORT_NONE(.fini))
                 [!provide]                        PROVIDE (__etext = .)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
-                0x80001564                        . = ALIGN (0x4)
+                0x80001550                        . = ALIGN (0x4)
 
-.preinit_array  0x80001564        0x0
-                0x80001564                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x80001550        0x0
+                0x80001550                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
-                0x80001564                        PROVIDE (__preinit_array_end = .)
+                0x80001550                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x80001564        0x0
-                0x80001564                        PROVIDE (__init_array_start = .)
+.init_array     0x80001550        0x0
+                0x80001550                        PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
-                0x80001564                        PROVIDE (__init_array_end = .)
+                0x80001550                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x80001564        0x0
+.fini_array     0x80001550        0x0
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
@@ -769,60 +769,60 @@ LOAD /nobackup/0-ZTBER/RISCV/lib/gcc/riscv64-unknown-elf/14.2.0/rv32i/ilp32/libg
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
 
-.lalign         0x80001564        0x0
-                0x80001564                        . = ALIGN (0x4)
-                0x80001564                        PROVIDE (_data_lma = .)
+.lalign         0x80001550        0x0
+                0x80001550                        . = ALIGN (0x4)
+                0x80001550                        PROVIDE (_data_lma = .)
 
-.dalign         0x80001564        0x0
-                0x80001564                        . = ALIGN (0x4)
-                0x80001564                        PROVIDE (_data = .)
+.dalign         0x80001550        0x0
+                0x80001550                        . = ALIGN (0x4)
+                0x80001550                        PROVIDE (_data = .)
 
-.data           0x80001564       0x78
+.data           0x80001550       0x74
  *(.rdata)
  *(.rodata .rodata.*)
- .rodata        0x80001564       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
+ .rodata        0x80001550       0x68 CMakeFiles/example-aes.dir/main.cpp.obj
  *(.gnu.linkonce.r.*)
  *(.data .data.*)
  *(.gnu.linkonce.d.*)
-                0x800015d0                        . = ALIGN (0x8)
- *fill*         0x800015cc        0x4 
+                0x800015b8                        . = ALIGN (0x8)
+ *fill*         0x800015b8        0x0 
                 [!provide]                        PROVIDE (__global_pointer$ = (. + 0x7f0))
  *(.sdata .sdata.*)
  .sdata._ZN3socL4uartE
-                0x800015d0        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
+                0x800015b8        0x4 CMakeFiles/example-aes.dir/main.cpp.obj
  *(.gnu.linkonce.s.*)
-                0x800015d8                        . = ALIGN (0x8)
- *fill*         0x800015d4        0x4 
+                0x800015c0                        . = ALIGN (0x8)
+ *fill*         0x800015bc        0x4 
  *(.srodata.cst16)
  *(.srodata.cst8)
  *(.srodata.cst4)
  *(.srodata.cst2)
  *(.srodata .srodata.*)
-                0x800015dc                        . = (. + 0x4)
- *fill*         0x800015d8        0x4 
-                0x800015dc                        . = ALIGN (0x4)
-                0x800015dc                        PROVIDE (_edata = .)
+                0x800015c4                        . = (. + 0x4)
+ *fill*         0x800015c0        0x4 
+                0x800015c4                        . = ALIGN (0x4)
+                0x800015c4                        PROVIDE (_edata = .)
                 [!provide]                        PROVIDE (edata = .)
                 [!provide]                        PROVIDE (_fbss = .)
-                0x800015dc                        PROVIDE (__bss_start = .)
+                0x800015c4                        PROVIDE (__bss_start = .)
 
-.bss            0x800015dc        0x0
+.bss            0x800015c4        0x0
  *(.sbss*)
  *(.gnu.linkonce.sb.*)
  *(.bss .bss.*)
  *(.gnu.linkonce.b.*)
  *(COMMON)
-                0x800015dc                        . = ALIGN (0x4)
-                0x800015e0                        . = ALIGN (0x8)
-                0x800015e0                        PROVIDE (_end = .)
+                0x800015c4                        . = ALIGN (0x4)
+                0x800015c8                        . = ALIGN (0x8)
+                0x800015c8                        PROVIDE (_end = .)
                 [!provide]                        PROVIDE (end = .)
 
-.stack          0x800015e0      0x400
+.stack          0x800015d0      0x400
                 [!provide]                        PROVIDE (_heap_end = .)
                 0x00000400                        . = __stack_size
- *fill*         0x800015e0      0x400 
-                0x800019e0                        PROVIDE (_sp = .)
-                0x800019e0                        __freertos_irq_stack_top = .
+ *fill*         0x800015d0      0x400 
+                0x800019d0                        PROVIDE (_sp = .)
+                0x800019d0                        __freertos_irq_stack_top = .
 OUTPUT(example-aes.elf elf32-littleriscv)
 
 .comment        0x00000000       0x21

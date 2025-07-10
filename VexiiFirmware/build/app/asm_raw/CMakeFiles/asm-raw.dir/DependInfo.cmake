@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/app/asm_raw/start.S" "/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/asm_raw/CMakeFiles/asm-raw.dir/start.S.obj"
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/app/asm_raw/start.S" "/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/asm_raw/CMakeFiles/asm-raw.dir/start.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 

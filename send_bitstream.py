@@ -5,7 +5,7 @@ import time
 
 SERIAL_PORT = "/dev/ttyUSB1"
 BAUD_RATE = 115200
-BITSTREAM_FILE = "test_output_encrypted.bin"
+BITSTREAM_FILE = "partial_flashing_encrypted.bin"
 
 with open(BITSTREAM_FILE, "rb") as f:
     bitstream_data = f.read()
@@ -20,12 +20,15 @@ with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=2) as ser:
         if len(block) < block_size:
             block += b"\x00" * (block_size - len(block))  # zero padding
 
-        framed_block = b"\xAA" + block  # prepend 0xAA header
+        # Frame format: 0xAA (sync) + 0x11 (start signal) + 16-byte block
+        framed_block = b"\xAA" + block
+        #stop_block =
 
         ser.write(framed_block)
-        time.sleep(0.01) 
         print(f"[TX] Block {i//block_size:02d}: {framed_block.hex().upper()}")
 
-        # Read response line (decrypted output)
+        # Wait for decrypted response
         print(ser.readline())
-  
+
+ 
+       

@@ -5,8 +5,8 @@ from Crypto.Util import Counter
 from pathlib import Path
 
 # === CONFIGURATION ===
-input_path  = Path("test_input.bin")                  # File filled with 0x66...
-output_path = Path("test_output_encrypted.bin")
+input_path  = Path("partial_dummy.bin")                  # File filled with 0x66...
+output_path = Path("partial_dummy_encrypted.bin")
 
 # === AES Parameters (256-bit key, fixed IV, no counter increment)
 key_hex = "1111111111111111111111111111111111111111111111111111111111111111"

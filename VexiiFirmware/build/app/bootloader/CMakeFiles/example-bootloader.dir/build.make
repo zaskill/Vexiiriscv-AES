@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware
+CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware/build
+CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware/build
 
 # Include any dependencies generated for this target.
 include app/bootloader/CMakeFiles/example-bootloader.dir/depend.make
@@ -70,72 +70,72 @@ include app/bootloader/CMakeFiles/example-bootloader.dir/progress.make
 include app/bootloader/CMakeFiles/example-bootloader.dir/flags.make
 
 app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj: app/bootloader/CMakeFiles/example-bootloader.dir/flags.make
-app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/app/bootloader/main.cpp
+app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/app/bootloader/main.cpp
 app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj: app/bootloader/CMakeFiles/example-bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj -MF CMakeFiles/example-bootloader.dir/main.cpp.obj.d -o CMakeFiles/example-bootloader.dir/main.cpp.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/app/bootloader/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.obj -MF CMakeFiles/example-bootloader.dir/main.cpp.obj.d -o CMakeFiles/example-bootloader.dir/main.cpp.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/app/bootloader/main.cpp
 
 app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-bootloader.dir/main.cpp.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/app/bootloader/main.cpp > CMakeFiles/example-bootloader.dir/main.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/app/bootloader/main.cpp > CMakeFiles/example-bootloader.dir/main.cpp.i
 
 app/bootloader/CMakeFiles/example-bootloader.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-bootloader.dir/main.cpp.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/app/bootloader/main.cpp -o CMakeFiles/example-bootloader.dir/main.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/app/bootloader/main.cpp -o CMakeFiles/example-bootloader.dir/main.cpp.s
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj: app/bootloader/CMakeFiles/example-bootloader.dir/flags.make
-app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S
+app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S > CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S > CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.i
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S -o CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S -o CMakeFiles/example-bootloader.dir/__/__/soc/common/start.S.s
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj: app/bootloader/CMakeFiles/example-bootloader.dir/flags.make
-app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S
+app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S > CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S > CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.i
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.S.s
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj: app/bootloader/CMakeFiles/example-bootloader.dir/flags.make
-app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp
+app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj: app/bootloader/CMakeFiles/example-bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj -MF CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj.d -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj -MF CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj.d -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp > CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp > CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.i
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp -o CMakeFiles/example-bootloader.dir/__/__/soc/common/trap.cpp.s
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: app/bootloader/CMakeFiles/example-bootloader.dir/flags.make
-app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp
+app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj: app/bootloader/CMakeFiles/example-bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -MF CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj.d -o CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -c /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -MF CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj.d -o CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj -c /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.i"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp > CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp > CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.i
 
 app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.s"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp -o CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp -o CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.s
 
 # Object files for target example-bootloader
 example__bootloader_OBJECTS = \
@@ -155,18 +155,18 @@ app/bootloader/example-bootloader.elf: app/bootloader/CMakeFiles/example-bootloa
 app/bootloader/example-bootloader.elf: app/bootloader/CMakeFiles/example-bootloader.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
 app/bootloader/example-bootloader.elf: app/bootloader/CMakeFiles/example-bootloader.dir/build.make
 app/bootloader/example-bootloader.elf: app/bootloader/CMakeFiles/example-bootloader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable example-bootloader.elf"
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example-bootloader.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable example-bootloader.elf"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example-bootloader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 app/bootloader/CMakeFiles/example-bootloader.dir/build: app/bootloader/example-bootloader.elf
 .PHONY : app/bootloader/CMakeFiles/example-bootloader.dir/build
 
 app/bootloader/CMakeFiles/example-bootloader.dir/clean:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader && $(CMAKE_COMMAND) -P CMakeFiles/example-bootloader.dir/cmake_clean.cmake
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader && $(CMAKE_COMMAND) -P CMakeFiles/example-bootloader.dir/cmake_clean.cmake
 .PHONY : app/bootloader/CMakeFiles/example-bootloader.dir/clean
 
 app/bootloader/CMakeFiles/example-bootloader.dir/depend:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nobackup/Vexiiriscv-AES/vexiifirmware /nobackup/Vexiiriscv-AES/vexiifirmware/app/bootloader /nobackup/Vexiiriscv-AES/vexiifirmware/build /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/bootloader/CMakeFiles/example-bootloader.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nobackup/Vexiiriscv-AES/VexiiFirmware /nobackup/Vexiiriscv-AES/VexiiFirmware/app/bootloader /nobackup/Vexiiriscv-AES/VexiiFirmware/build /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/bootloader/CMakeFiles/example-bootloader.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : app/bootloader/CMakeFiles/example-bootloader.dir/depend
 

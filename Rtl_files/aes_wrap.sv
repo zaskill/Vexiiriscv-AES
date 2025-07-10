@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
 //
-// AES wrapper for FI experiments
+// AES wrapper 
 
 module aes_wrap
   import aes_pkg::*;
@@ -23,14 +23,14 @@ module aes_wrap
   input  logic [255:0] aes_key,
   output logic [127:0] aes_output,
   //----------------
-  input  logic         aes_decrypt_i,
-  input logic [127:0] aes_iv,
-  input  logic         start,
+  input  logic         aes_decrypt_i, //Added decrypt mode useful for aes_modes other than CTR
+  input logic [127:0] aes_iv,  // Added counter initial value to the FSM for modes other than ECB
+  input  logic         start, // added a start signal to trigger fsm after loading a new input through software
   //-----------------
   output logic         alert_recov_o,
   output logic         alert_fatal_o,
 
-  output logic         test_done_o
+  output logic         data_valid
 );
 
   localparam logic SIDELOAD = 1'b1;
@@ -137,10 +137,18 @@ module aes_wrap
   aes_wrap_ctrl_e aes_wrap_ctrl_ns, aes_wrap_ctrl_cs;
   logic [31:0] count_d, count_q;
   logic [127:0] data_out_d, data_out_q;
-  logic test_done_q, test_done_d;
-  logic start_q;
-  assign start_rising = start && !start_q;
+  //------------------------------------------------
+  //Pulse detection of the start signal comming from software is added, since it takes a lot of time for the software
+  //to stop the fsm by de-asserting the signal, the fsm was looping arround many times on the same input.
+  //The rising edge detection solves that problem
+  logic start_r, start_r_prev;
+  
+  logic start_pulse;
+  assign start_pulse = (start_r == 1'b1) && (start_r_prev == 1'b0);
+  
+  logic start_latched;
 
+ //----------------------------------------------------------------------------------------------------
   always_comb begin : aes_wrap_fsm
     // TL-UL
     h2d.a_valid           = 1'b0;
@@ -161,16 +169,18 @@ module aes_wrap
     aes_wrap_ctrl_ns      = aes_wrap_ctrl_cs;
     count_d               = count_q + 32'h1;
     data_out_d            = data_out_q;
-    test_done_o           = 1'b0;
-    test_done_d   = test_done_q; 
+    data_valid = 1'b0;
+    
+    
+
     
     unique case (aes_wrap_ctrl_cs)
 
       IDLE: begin
-        test_done_d = 1'b0; // clear when going back to idle
-            
+
+      
       // Wait for 'start' signal before beginning
-      if (start_rising) begin
+      if (start_latched) begin
         // Poll the AES core to see if it's idle
          h2d.a_valid   = 1'b1;
          h2d.a_opcode  = Get;
@@ -181,6 +191,7 @@ module aes_wrap
            if (d2h.d_data[0] == 1'b1) begin
              aes_wrap_ctrl_ns = W_CTRL_AUX_SHADOWED;
              count_d          = 32'h0;
+             data_valid     = 1'b0;
            end
          end
        end
@@ -195,6 +206,7 @@ module aes_wrap
         // We can't do back to back transactions. De-assert valid while receiving response.
         if (d2h.d_valid) begin
           h2d.a_valid = 1'b0;
+          data_valid     = 1'b0;
         end
 
         // The shadow reg needs to be written twice.
@@ -212,6 +224,7 @@ module aes_wrap
         // We can't do back to back transactions. De-assert valid while receiving response.
         if (d2h.d_valid) begin
           h2d.a_valid = 1'b0;
+          data_valid     = 1'b0;
         end
 
         // The shadow reg needs to be written twice.
@@ -229,6 +242,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_1;
+          data_valid     = 1'b0;
         end
       end
 
@@ -240,6 +254,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_2;
+          data_valid     = 1'b0;
         end
       end
 
@@ -251,6 +266,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_3;
+          data_valid     = 1'b0;
         end
       end
 
@@ -262,6 +278,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_4;
+          data_valid     = 1'b0;
         end
       end
 
@@ -273,6 +290,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_5;
+          data_valid     = 1'b0;
         end
       end
 
@@ -284,6 +302,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_6;
+          data_valid     = 1'b0;
         end
       end
 
@@ -295,6 +314,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE0_7;
+          data_valid     = 1'b0;
         end
       end
 
@@ -317,6 +337,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE1_1;
+          data_valid     = 1'b0;
         end
       end
 
@@ -328,6 +349,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE1_2;
+          data_valid     = 1'b0;
         end
       end
 
@@ -350,6 +372,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE1_4;
+          data_valid     = 1'b0;
         end
       end
 
@@ -361,6 +384,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE1_5;
+          data_valid     = 1'b0;
         end
       end
 
@@ -372,6 +396,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE1_6;
+          data_valid     = 1'b0;
         end
       end
 
@@ -383,6 +408,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_KEY_SHARE1_7;
+          data_valid     = 1'b0;
         end
       end
 
@@ -394,6 +420,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = AES_MODE == AES_ECB ? W_DATA_IN_0 : W_IV_0;
+          data_valid     = 1'b0;
         end
       end
 
@@ -405,6 +432,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_IV_1;
+          data_valid     = 1'b0;
         end
       end
 
@@ -416,6 +444,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_IV_2;
+          data_valid     = 1'b0;
         end
       end
 
@@ -427,6 +456,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_IV_3;
+          data_valid     = 1'b0;
         end
       end
 
@@ -438,6 +468,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_DATA_IN_0;
+          data_valid     = 1'b0;
         end
       end
 
@@ -449,6 +480,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_DATA_IN_1;
+          data_valid     = 1'b0;
         end
       end
 
@@ -460,6 +492,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_DATA_IN_2;
+          data_valid     = 1'b0;
         end
       end
 
@@ -471,6 +504,7 @@ module aes_wrap
         if (d2h.d_valid) begin
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = W_DATA_IN_3;
+          data_valid     = 1'b0;
         end
       end
 
@@ -484,6 +518,7 @@ module aes_wrap
           h2d.a_valid      = 1'b0;
           aes_wrap_ctrl_ns = R_STATUS;
           count_d          = '0;
+          data_valid     = 1'b0;
         end
       end
 
@@ -498,6 +533,7 @@ module aes_wrap
           h2d.a_valid = 1'b0;
           if ((d2h.d_data[0] == 1'b1) && (d2h.d_data[3] == 1'b1)) begin
             aes_wrap_ctrl_ns = R_DATA_OUT_0;
+            data_valid     = 1'b0;
           end
         end
       end
@@ -511,6 +547,7 @@ module aes_wrap
           h2d.a_valid      = 1'b0;
           data_out_d[31:0] = d2h.d_data;
           aes_wrap_ctrl_ns = R_DATA_OUT_1;
+          data_valid     = 1'b0;
         end
       end
 
@@ -523,6 +560,7 @@ module aes_wrap
           h2d.a_valid       = 1'b0;
           data_out_d[63:32] = d2h.d_data;
           aes_wrap_ctrl_ns  = R_DATA_OUT_2;
+          data_valid     = 1'b0;
         end
       end
 
@@ -535,33 +573,30 @@ module aes_wrap
           h2d.a_valid       = 1'b0;
           data_out_d[95:64] = d2h.d_data;
           aes_wrap_ctrl_ns  = R_DATA_OUT_3;
+          data_valid     = 1'b0;
         end
       end
 
       R_DATA_OUT_3: begin
-        h2d.a_valid   = 1'b1;
-        h2d.a_opcode  = Get;
-        h2d.a_address = {{{32-BlockAw}{1'b0}}, AES_DATA_OUT_3_OFFSET};
-
-        if (d2h.d_valid) begin
-          h2d.a_valid        = 1'b0;
-          data_out_d[127:96] = d2h.d_data;
-          aes_wrap_ctrl_ns   = FINISH;
+          h2d.a_valid   = 1'b1;
+          h2d.a_opcode  = Get;
+          h2d.a_address = {{{32-BlockAw}{1'b0}}, AES_DATA_OUT_3_OFFSET};
+            
+          if (d2h.d_valid) begin
+            h2d.a_valid        = 1'b0;
+            data_out_d[127:96] = d2h.d_data;
+            aes_wrap_ctrl_ns   = FINISH;
+            data_valid     = 1'b0; 
+            
+            
+          end
         end
-      end
 
       FINISH: begin
-        // Just signal end of simulation.
-        // Generate a one-cycle pulse
-          if (!test_done_q) begin
-            test_done_o = 1'b1;
-            test_done_d = 1'b1;
-          end else begin
-            test_done_o = 1'b0;
-          end
+        // The initial FSM ran the aes module only one time, going back to idle was added to allow the fsm to process a new input
+        aes_wrap_ctrl_ns = IDLE;
+        data_valid     = 1'b1; // valid signal is asserted only when a new input is processed and the output is ready
         
-          // Wait for new input by going to IDLE or stalling
-          aes_wrap_ctrl_ns = IDLE;
         end
 
 
@@ -580,20 +615,29 @@ always_ff @(posedge clk_i or negedge rst_ni) begin : fsm_reg
   if (!rst_ni) begin
     aes_wrap_ctrl_cs <= IDLE;
     count_q          <= 32'b0;
-    test_done_q      <= 1'b0;
-    start_q          <= 1'b0;
+    start_r          <= 1'b0;
+    start_r_prev <= 1'b0 ;
+    start_latched <= 1'b0;
+  
   end else begin
     aes_wrap_ctrl_cs <= aes_wrap_ctrl_ns;
     count_q          <= count_d;
-    start_q          <= start;
-
-    // Reset test_done_q when entering IDLE
-    if (aes_wrap_ctrl_ns == IDLE)
-      test_done_q <= 1'b0;
-    else
-      test_done_q <= test_done_d;  
+    if (aes_wrap_ctrl_cs == IDLE && start_pulse) begin
+    start_latched <= 1'b1;  // latch the request
+     end else if (aes_wrap_ctrl_cs != IDLE) begin
+    start_latched <= 1'b0;  // clear when leaving IDLE
+     end
+ 
+    
+    start_r_prev <= start_r; 
+    start_r <= start;
+    
+   
+   end
   end
-end
+
+
+
 
 
   always_ff @(posedge clk_i or negedge rst_ni) begin : data_out_reg
@@ -604,5 +648,16 @@ end
     end
   end
   assign aes_output = data_out_q;
-
+ 
+  
+  // Ila's were added for testing and can be removed for the final design
+  ila_3 ila_3(
+  .clk(clk_i),
+  .probe0(data_valid),
+  .probe1(aes_wrap_ctrl_cs),
+  .probe2(start_pulse),
+  .probe3(start_latched)
+  
+  );
+  
 endmodule

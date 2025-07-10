@@ -1,7 +1,7 @@
 app/aes/CMakeFiles/example-aes.dir/main.cpp.obj: \
- /nobackup/Vexiiriscv-AES/vexiifirmware/app/aes/main.cpp \
- /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.hpp \
- /nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/peripherals.hpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/app/aes/main.cpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.hpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/peripherals.hpp \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/cstdint \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/riscv64-unknown-elf/rv32i/ilp32/bits/c++config.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/riscv64-unknown-elf/rv32i/ilp32/bits/os_defines.h \
@@ -14,10 +14,10 @@ app/aes/CMakeFiles/example-aes.dir/main.cpp.obj: \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/_newlib_version.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/sys/_intsup.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/sys/_stdint.h \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/riscv/clint/clint.hpp \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/legacy/clint.h \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/legacy/type.h \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/legacy/io.h \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/riscv/clint/clint.hpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/legacy/clint.h \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/legacy/type.h \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/legacy/io.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/chrono \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/bits/requires_hosted.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/bits/chrono.h \
@@ -203,11 +203,11 @@ app/aes/CMakeFiles/example-aes.dir/main.cpp.obj: \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/bits/chrono_io.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/iomanip \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/bits/quoted_string.h \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/riscv/plic/plic.hpp \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/legacy/plic.h \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/spinal/uart/uart.hpp \
- /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/legacy/uart.h \
- /nobackup/Vexiiriscv-AES/vexiifirmware/device/microsoc_sim/include/device.hpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/riscv/plic/plic.hpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/legacy/plic.h \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/spinal/uart/uart.hpp \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/legacy/uart.h \
+ /nobackup/Vexiiriscv-AES/VexiiFirmware/device/microsoc_sim/include/device.hpp \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/c++/14.2.0/cstring \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/string.h \
  /nobackup/0-ZTBER/RISCV/riscv64-unknown-elf/include/strings.h \

@@ -5,13 +5,13 @@
 # compile CXX with /nobackup/0-ZTBER/RISCV/bin/riscv64-unknown-elf-g++
 ASM_DEFINES = 
 
-ASM_INCLUDES = -isystem /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/..
+ASM_INCLUDES = -isystem /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/..
 
-ASM_FLAGS = -march=rv32i -mabi=ilp32 -ffunction-sections -fdata-sections -Wall -Wextra -pedantic -I/nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default -I/nobackup/Vexiiriscv-AES/vexiifirmware/device/microsoc_sim
+ASM_FLAGS = -march=rv32i -mabi=ilp32 -ffunction-sections -fdata-sections -Wall -Wextra -pedantic -I/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default -I/nobackup/Vexiiriscv-AES/VexiiFirmware/device/microsoc_sim
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/..
+CXX_INCLUDES = -isystem /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/..
 
-CXX_FLAGS = -I/nobackup/logiciels/elfio -std=gnu++23 -march=rv32i -mabi=ilp32 -ffunction-sections -fdata-sections -Wall -Wextra -pedantic -fno-exceptions -fno-rtti -fno-use-cxa-atexit -I/nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default -I/nobackup/Vexiiriscv-AES/vexiifirmware/device/microsoc_sim
+CXX_FLAGS = -I/nobackup/logiciels/elfio -std=gnu++23 -march=rv32i -mabi=ilp32 -ffunction-sections -fdata-sections -Wall -Wextra -pedantic -fno-exceptions -fno-rtti -fno-use-cxa-atexit -I/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default -I/nobackup/Vexiiriscv-AES/VexiiFirmware/device/microsoc_sim
 

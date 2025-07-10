@@ -8,11 +8,15 @@ module led_flashing (
     reg [2:0]  position;      // Position of the active LED (0 to 6)
 
     always @(posedge clk or posedge rst) begin
-       
+       if (rst) begin
         counter  <= 24'd0;
         position <= 3'd0;
         led      <= 7'b0000001;
         
+       end else begin
+        led      <= 7'b0000001;
+        
+       end
     end
 
 endmodule

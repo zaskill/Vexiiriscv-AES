@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/app/bootloader
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/app/bootloader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

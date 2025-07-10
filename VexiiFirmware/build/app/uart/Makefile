@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware
+CMAKE_SOURCE_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/vexiifirmware/build
+CMAKE_BINARY_DIR = /nobackup/Vexiiriscv-AES/VexiiFirmware/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles /nobackup/Vexiiriscv-AES/vexiifirmware/build/app/uart//CMakeFiles/progress.marks
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/vexiifirmware/build/CMakeFiles 0
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/uart//CMakeFiles/progress.marks
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/Vexiiriscv-AES/VexiiFirmware/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/clean
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/preinstall
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/preinstall
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 app/uart/CMakeFiles/example-uart.dir/rule:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/CMakeFiles/example-uart.dir/rule
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/uart/CMakeFiles/example-uart.dir/rule
 .PHONY : app/uart/CMakeFiles/example-uart.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ example-uart: app/uart/CMakeFiles/example-uart.dir/rule
 
 # fast build rule for target.
 example-uart/fast:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/build
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/build
 .PHONY : example-uart/fast
 
 __/__/soc/common/start.obj: __/__/soc/common/start.S.obj
@@ -135,7 +135,7 @@ __/__/soc/common/start.obj: __/__/soc/common/start.S.obj
 
 # target to build an object file
 __/__/soc/common/start.S.obj:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/start.S.obj
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/start.S.obj
 .PHONY : __/__/soc/common/start.S.obj
 
 __/__/soc/common/trap.obj: __/__/soc/common/trap.S.obj
@@ -143,7 +143,7 @@ __/__/soc/common/trap.obj: __/__/soc/common/trap.S.obj
 
 # target to build an object file
 __/__/soc/common/trap.S.obj:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.S.obj
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.S.obj
 .PHONY : __/__/soc/common/trap.S.obj
 
 __/__/soc/common/trap.obj: __/__/soc/common/trap.cpp.obj
@@ -151,7 +151,7 @@ __/__/soc/common/trap.obj: __/__/soc/common/trap.cpp.obj
 
 # target to build an object file
 __/__/soc/common/trap.cpp.obj:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.cpp.obj
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.cpp.obj
 .PHONY : __/__/soc/common/trap.cpp.obj
 
 __/__/soc/common/trap.i: __/__/soc/common/trap.cpp.i
@@ -159,7 +159,7 @@ __/__/soc/common/trap.i: __/__/soc/common/trap.cpp.i
 
 # target to preprocess a source file
 __/__/soc/common/trap.cpp.i:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.cpp.i
 .PHONY : __/__/soc/common/trap.cpp.i
 
 __/__/soc/common/trap.s: __/__/soc/common/trap.cpp.s
@@ -167,7 +167,7 @@ __/__/soc/common/trap.s: __/__/soc/common/trap.cpp.s
 
 # target to generate assembly for a file
 __/__/soc/common/trap.cpp.s:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/common/trap.cpp.s
 .PHONY : __/__/soc/common/trap.cpp.s
 
 __/__/soc/microsoc/default/system/soc.obj: __/__/soc/microsoc/default/system/soc.cpp.obj
@@ -175,7 +175,7 @@ __/__/soc/microsoc/default/system/soc.obj: __/__/soc/microsoc/default/system/soc
 
 # target to build an object file
 __/__/soc/microsoc/default/system/soc.cpp.obj:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/microsoc/default/system/soc.cpp.obj
 .PHONY : __/__/soc/microsoc/default/system/soc.cpp.obj
 
 __/__/soc/microsoc/default/system/soc.i: __/__/soc/microsoc/default/system/soc.cpp.i
@@ -183,7 +183,7 @@ __/__/soc/microsoc/default/system/soc.i: __/__/soc/microsoc/default/system/soc.c
 
 # target to preprocess a source file
 __/__/soc/microsoc/default/system/soc.cpp.i:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/microsoc/default/system/soc.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/microsoc/default/system/soc.cpp.i
 .PHONY : __/__/soc/microsoc/default/system/soc.cpp.i
 
 __/__/soc/microsoc/default/system/soc.s: __/__/soc/microsoc/default/system/soc.cpp.s
@@ -191,7 +191,7 @@ __/__/soc/microsoc/default/system/soc.s: __/__/soc/microsoc/default/system/soc.c
 
 # target to generate assembly for a file
 __/__/soc/microsoc/default/system/soc.cpp.s:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/microsoc/default/system/soc.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/__/__/soc/microsoc/default/system/soc.cpp.s
 .PHONY : __/__/soc/microsoc/default/system/soc.cpp.s
 
 main.obj: main.cpp.obj
@@ -199,7 +199,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/main.cpp.obj
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -207,7 +207,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/main.cpp.i
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -215,7 +215,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/main.cpp.s
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(MAKE) $(MAKESILENT) -f app/uart/CMakeFiles/example-uart.dir/build.make app/uart/CMakeFiles/example-uart.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -249,6 +249,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /nobackup/Vexiiriscv-AES/vexiifirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /nobackup/Vexiiriscv-AES/VexiiFirmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

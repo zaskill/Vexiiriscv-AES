@@ -8,21 +8,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/start.S" "/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj"
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.S" "/nobackup/Vexiiriscv-AES/vexiifirmware/build/app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj"
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/start.S" "/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/start.S.obj"
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.S" "/nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/.."
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/.."
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/soc/common/trap.cpp" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj" "gcc" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj.d"
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/soc/microsoc/default/system/soc.cpp" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj" "gcc" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj.d"
-  "/nobackup/Vexiiriscv-AES/vexiifirmware/app/hello_world/main.cpp" "app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj" "gcc" "app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj.d"
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/common/trap.cpp" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj" "gcc" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/common/trap.cpp.obj.d"
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/soc/microsoc/default/system/soc.cpp" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj" "gcc" "app/hello_world/CMakeFiles/example-hello_world.dir/__/__/soc/microsoc/default/system/soc.cpp.obj.d"
+  "/nobackup/Vexiiriscv-AES/VexiiFirmware/app/hello_world/main.cpp" "app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj" "gcc" "app/hello_world/CMakeFiles/example-hello_world.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

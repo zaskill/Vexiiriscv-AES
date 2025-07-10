@@ -1,4 +1,4 @@
-# Install script for directory: /nobackup/Vexiiriscv-AES/vexiifirmware/common/hal/spinal/uart
+# Install script for directory: /nobackup/Vexiiriscv-AES/VexiiFirmware/common/hal/spinal/uart
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

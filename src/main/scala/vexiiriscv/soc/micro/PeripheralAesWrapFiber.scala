@@ -25,7 +25,7 @@ class PeripheralAesWrapFiber extends Area {
       val io = new Bundle {
         val bus        = slave(Bus(busParameter))
         val aes_output = out Bits(128 bits)
-        val test_done  = out Bool()
+        val data_valid  = out Bool()
         val clk        = in Bool()
         val reset      = in Bool()
       }
@@ -34,37 +34,29 @@ class PeripheralAesWrapFiber extends Area {
       aes.io.clk_i  := io.clk
       aes.io.rst_ni := !io.reset
 
-      val inputData     = Reg(Bits(128 bits)) init(0)
-      val keyData       = Reg(Bits(256 bits)) init(0)
-      val aesOutput     = Reg(Bits(128 bits)) init(0)
-      val aesIv         = Reg(Bits(128 bits)) init(0)
+      val inputData      = Reg(Bits(128 bits)) init(0)
+      val keyData        = Reg(Bits(256 bits)) init(0)
+      val aesOutput      = Reg(Bits(128 bits)) init(0)
+      val aesIv          = Reg(Bits(128 bits)) init(0)
       val decryptModeReg = Reg(Bool()) init(False)
-      val startReg      = Reg(Bool) init(False)
+      val startReg       = Reg(Bool) init(False)
+      val dataValid      = Bool()
+      
 
-      val testDoneRaw   = Reg(Bool) init(False)
-      val testDonePrev  = RegNext(testDoneRaw) init(False)
-      val testDone      = Bool()
-      testDone := testDoneRaw && !testDonePrev
-
-      val startPulse = startReg && !RegNext(startReg, False)
-      aes.io.start         := startPulse
+      aes.io.start         := startReg
       aes.io.aes_input     := inputData
       aes.io.aes_key       := keyData
       aes.io.aes_decrypt_i := decryptModeReg
       aes.io.aes_iv        := aesIv
-
-      when(startPulse) {
-        startReg := False
-        testDoneRaw := False  // Clear done on new start
-      }
-
-      when(aes.io.test_done_o) {
+      dataValid := aes.io.data_valid
+    
+      when(aes.io.data_valid) {
         aesOutput   := aes.io.aes_output
-        testDoneRaw := True
       }
 
+  
       io.aes_output := aesOutput
-      io.test_done  := testDone
+      io.data_valid  := dataValid
 
       val bus     = io.bus
       val address = bus.a.payload.address(11 downto 2)
@@ -107,8 +99,8 @@ class PeripheralAesWrapFiber extends Area {
         is(0x010) { rdata := aesOutput(95  downto 64)   }
         is(0x011) { rdata := aesOutput(127 downto 96)   }
 
-        // Test done
-        is(0x012) { rdata := B(0, 31 bits) ## testDone }
+        // Data Valid
+        is(0x012) { rdata := B(0, 31 bits) ## dataValid }
 
         // Decrypt mode
         is(0x013) {
@@ -125,12 +117,16 @@ class PeripheralAesWrapFiber extends Area {
         is(0x016) { when(bus.a.payload.opcode === Opcode.A.PUT_FULL_DATA) { aesIv(95  downto 64)   := wdata } otherwise { rdata := aesIv(95  downto 64)   } }
         is(0x017) { when(bus.a.payload.opcode === Opcode.A.PUT_FULL_DATA) { aesIv(127 downto 96)   := wdata } otherwise { rdata := aesIv(127 downto 96)   } }
 
+        
         // Start signal
         is(0x019) {
           when(bus.a.payload.opcode === Opcode.A.PUT_FULL_DATA) {
-            startReg := True
+            startReg := wdata(0)
+          } otherwise {
+            rdata := B(0, 31 bits) ## startReg
           }
         }
+        
       }
     }
 
@@ -139,6 +135,6 @@ class PeripheralAesWrapFiber extends Area {
     core.io.reset := ClockDomain.current.reset
 
     val aes_output = core.io.aes_output.toIo()
-    val test_done  = core.io.test_done.toIo()
+    val data_valid  = core.io.data_valid.toIo()
   }
 }
