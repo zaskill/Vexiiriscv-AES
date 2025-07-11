@@ -12,19 +12,22 @@ module fifo128to32 (
     output reg         data_valid
 );
 
-    // Internal FIFO depth for example: store up to 16 * 128-bit entries
     localparam FIFO_DEPTH = 16;
-    localparam FIFO_PTR_WIDTH = 4; // log2(FIFO_DEPTH)
+    localparam FIFO_PTR_WIDTH = 4;
 
-    // 128-bit wide FIFO
     reg [127:0] fifo_mem [0:FIFO_DEPTH-1];
     reg [FIFO_PTR_WIDTH-1:0] write_ptr = 0;
     reg [FIFO_PTR_WIDTH-1:0] read_ptr  = 0;
-    reg [1:0] chunk_index = 0; // Index into 32-bit chunks: 0 to 3
+    reg [1:0] chunk_index = 0;
     reg [127:0] current_word;
-    reg has_data = 0; // Indicates current_word is valid
+    reg has_data = 0;
 
-    // Write logic (128-bit input)
+    // Byte swap 32-bit word
+    function [31:0] byte_swap32(input [31:0] in);
+        byte_swap32 = {in[7:0], in[15:8], in[23:16], in[31:24]};
+    endfunction
+
+    // Write logic
     always @(posedge clk) begin
         if (rst) begin
             write_ptr <= 0;
@@ -37,38 +40,41 @@ module fifo128to32 (
     // Read logic
     always @(posedge clk) begin
         if (rst) begin
-            read_ptr    <= 0;
-            chunk_index <= 0;
-            data_out    <= 0;
-            data_valid  <= 0;
-            has_data    <= 0;
+            read_ptr     <= 0;
+            chunk_index  <= 0;
+            data_out     <= 0;
+            data_valid   <= 0;
+            has_data     <= 0;
         end else if (read_en) begin
             if (!has_data && (read_ptr != write_ptr)) begin
-                // Load next 128-bit word and output first chunk
+                // Load 128-bit word, delay actual output to next cycle
                 current_word <= fifo_mem[read_ptr];
                 read_ptr     <= read_ptr + 1;
-                chunk_index  <= 1;
-                data_out     <= fifo_mem[read_ptr][31:0];
-                data_valid   <= 1;
+                chunk_index  <= 0;
                 has_data     <= 1;
+                data_valid   <= 0;  // output will begin next cycle
             end else if (has_data) begin
-                // Output next 32-bit chunk
                 case (chunk_index)
+                    0: begin
+                        data_out    <= byte_swap32(current_word[31:0]);
+                        data_valid  <= 1;
+                        chunk_index <= 1;
+                    end
                     1: begin
-                        data_out   <= current_word[63:32];
-                        data_valid <= 1;
+                        data_out    <= byte_swap32(current_word[63:32]);
+                        data_valid  <= 1;
                         chunk_index <= 2;
                     end
                     2: begin
-                        data_out   <= current_word[95:64];
-                        data_valid <= 1;
+                        data_out    <= byte_swap32(current_word[95:64]);
+                        data_valid  <= 1;
                         chunk_index <= 3;
                     end
                     3: begin
-                        data_out   <= current_word[127:96];
-                        data_valid <= 1;
-                        has_data   <= 0;
+                        data_out    <= byte_swap32(current_word[127:96]);
+                        data_valid  <= 1;
                         chunk_index <= 0;
+                        has_data    <= 0;
                     end
                     default: begin
                         data_valid <= 0;
@@ -81,7 +87,5 @@ module fifo128to32 (
             data_valid <= 0;
         end
     end
-
-  
 
 endmodule

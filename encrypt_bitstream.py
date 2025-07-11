@@ -5,8 +5,8 @@ from Crypto.Util import Counter
 from pathlib import Path
 
 # === CONFIGURATION ===
-input_path  = Path("partial_dummy.bin")                  # File filled with 0x66...
-output_path = Path("partial_dummy_encrypted.bin")
+input_path  = Path("partial_flashing.bin")                  # File filled with 0x66...
+output_path = Path("partial_flashing_encrypted.bin")
 
 # === AES Parameters (256-bit key, fixed IV, no counter increment)
 key_hex = "1111111111111111111111111111111111111111111111111111111111111111"
@@ -19,6 +19,7 @@ iv  = int(iv_hex, 16)
 bitstream = input_path.read_bytes()
 padding_len = (16 - len(bitstream) % 16) % 16
 bitstream += b"\x00" * padding_len
+
 
 # === Encrypt each 16-byte block independently (same IV every time)
 encrypted_blocks = []

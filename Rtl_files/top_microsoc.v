@@ -18,7 +18,7 @@ module top_microsoc (
   wire [31:0]  icap_data;
   wire         icap_valid;
   wire [7:0] LEDS;
-   
+  wire [31:0] icap_output;
 
   
   
@@ -78,7 +78,7 @@ ICAPE2 #(
                                // model.
 )
 ICAPE2_inst (
-   .O(),         // 32-bit output: Configuration data output bus
+   .O(icap_output),         // 32-bit output: Configuration data output bus
    .CLK(CLK100MHZ),     // 1-bit input: Clock Input
    .CSIB(~icap_valid),   // 1-bit input: Active-Low ICAP Enable
    .I(icap_data),         // 32-bit input: Configuration data input bus
@@ -102,6 +102,7 @@ led_flashing led_flashing(
   .probe1(uart_txd)
 
   );
+  
   */
   
   ila_2 ila_2(
@@ -109,7 +110,8 @@ led_flashing led_flashing(
   .probe0(aes_test_done),
   .probe1(aes_output),
   .probe2(icap_data),
-  .probe3(icap_valid)
+  .probe3(icap_valid),
+  .probe4(icap_output[7:4])
   );
 
   

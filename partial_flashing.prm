@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX8
+Size               2M
+Start Address      0x00000000
+End Address        0x001FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x000763B7    Jul 10 17:33:29 2025    /home/zt283801/lowrisc_ip_aes_wrap_1.0/default-vivado/lowrisc_ip_aes_wrap_1.0.runs/child_0_impl_1/led_flashing_led_flashing_partial.bit
