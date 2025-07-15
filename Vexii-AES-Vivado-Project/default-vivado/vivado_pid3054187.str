@@ -1,0 +1,316 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 3054187
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jul 15 14:56:05 CEST 2025
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 6.8.0-60-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: 1
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/home/cao/xilinx/vivado_2021_1/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/home/cao/xilinx/vivado_2021_1/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zt283801
+User home directory: /home/zt283801
+User working directory: /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/cao/xilinx/vivado_2021_1/Vivado
+HDI_APPROOT: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1
+RDI_DATADIR: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1/data
+RDI_BINDIR: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1/bin
+
+Vivado preferences file: /home/zt283801/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /home/zt283801/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /home/zt283801/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/home/cao/xilinx/vivado_2021_1/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	/nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/vivado.log
+Vivado journal file: 	/nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3054187-gre060574
+
+Xilinx Environment Variables
+----------------------------
+SDKMAN_CANDIDATES_API: https://api.sdkman.io/2
+SDKMAN_CANDIDATES_DIR: /home/zt283801/.sdkman/candidates
+SDKMAN_DIR: /home/zt283801/.sdkman
+SDKMAN_PLATFORM: linuxx64
+XILINX: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@grelm01:2100@grelm02:2100@grelm03:2100@grelm04
+XILINX_DSP: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /home/cao/xilinx/vivado_2021_1/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1
+XILINX_VITIS: 
+XILINX_VIVADO: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1
+XILINX_VIVADO_HLS: /home/cao/xilinx/vivado_2021_1/Vivado/2021.1
+
+
+GUI allocated memory:	404 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,993 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/MicroSoc-AES.xpr");
+// [GUI Memory]: 130 MB (+133570kb) [00:00:08]
+// [Engine Memory]: 1,994 MB (+1938934kb) [00:00:08]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/MicroSoc-AES.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,871 MB. GUI used memory: 79 MB. Current time: 7/15/25, 2:56:06 PM CEST
+// Tcl Message: open_project /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/MicroSoc-AES.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/MicroSoc-AES.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 139 MB (+3096kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  1946 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cao/xilinx/vivado_2021_1/Vivado/2021.1/data/ip'. 
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 7634.512 ; gain = 65.027 ; free physical = 11121 ; free virtual = 22811 
+// Project name: MicroSoc-AES; location: /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado; part: xc7vx485tffg1157-1
+// 'j' command handler elapsed time: 10 seconds
+dismissDialog("Open Project"); // bz
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // h
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // an
+// [GUI Memory]: 157 MB (+11745kb) [00:00:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,059 MB. GUI used memory: 96 MB. Current time: 7/15/25, 2:56:22 PM CEST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), led_flashing : xil_defaultlib.led_flashing]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, prim_mubi32_sync (prim_mubi32_sync.sv)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), led_flashing : xil_defaultlib.led_flashing]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), ila_2 : xil_defaultlib.ila_2]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), led_flashing : xil_defaultlib.led_flashing]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1710 ms.
+selectCodeEditor("top_microsoc.v", 22, 288); // bP
+selectCodeEditor("top_microsoc.v", 21, 411); // bP
+selectCodeEditor("top_microsoc.v", 123, 290); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,094 MB. GUI used memory: 101 MB. Current time: 7/15/25, 2:56:51 PM CEST
+// [Engine Memory]: 2,101 MB (+7597kb) [00:01:00]
+// Elapsed time: 27 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_microsoc.v", 3, 322); // bP
+selectCodeEditor("top_microsoc.v", 19, 326); // bP
+// Elapsed time: 36 seconds
+selectCodeEditor("top_microsoc.v", 487, 313); // bP
+selectCodeEditor("top_microsoc.v", 491, 329); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v)]", 4); // D
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // h
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 2,124 MB. GUI used memory: 101 MB. Current time: 7/15/25, 2:58:12 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), ila_2 : xil_defaultlib.ila_2]", 7, false); // D
+selectCodeEditor("top_microsoc.v", 68, 414); // bP
+selectCodeEditor("top_microsoc.v", 89, 560); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), fifo128to32 : fifo128to32 (fifo128to32.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), fifo128to32 : fifo128to32 (fifo128to32.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1657 ms.
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // h
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 2,146 MB. GUI used memory: 103 MB. Current time: 7/15/25, 2:59:17 PM CEST
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), dut : MicroSoc (MicroSoc.v)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), dut : MicroSoc (MicroSoc.v), system_peripheral_aes_logic_core : PeripheralAesCore (MicroSoc.v)]", 20); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), dut : MicroSoc (MicroSoc.v), system_peripheral_aes_logic_core : PeripheralAesCore (MicroSoc.v), aes : aes_wrap (aes_wrap.sv)]", 21); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), dut : MicroSoc (MicroSoc.v), system_peripheral_aes_logic_core : PeripheralAesCore (MicroSoc.v), aes : aes_wrap (aes_wrap.sv)]", 21, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_microsoc (top_microsoc.v), dut : MicroSoc (MicroSoc.v), system_peripheral_aes_logic_core : PeripheralAesCore (MicroSoc.v), aes : aes_wrap (aes_wrap.sv)]", 21, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1705 ms.
+selectCodeEditor("aes_wrap.sv", 133, 422); // bP
+selectCodeEditor("aes_wrap.sv", 562, 442); // bP
+selectCodeEditor("aes_wrap.sv", 167, 583); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // h
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 2,169 MB. GUI used memory: 103 MB. Current time: 7/15/25, 2:59:52 PM CEST
+selectCodeEditor("aes_wrap.sv", 449, 258); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 2); // D
+selectCodeEditor("aes_wrap.sv", 417, 287); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 117); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, arty.xdc]", 119, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, arty.xdc]", 119, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1129 ms.
+selectCodeEditor("arty.xdc", 7, 558); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arty.xdc", 4, 236); // bP
+selectCodeEditor("arty.xdc", 643, 314); // bP
+selectCodeEditor("arty.xdc", 640, 336); // bP
+selectCodeEditor("arty.xdc", 586, 184); // bP
+// Elapsed time: 375 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenuItem(PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE, "Generate Memory Configuration File..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE
+// aU (cs): Write Memory Configuration File: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2430 ms.
+selectComboBox(PAResourceTtoZ.WriteCfgMemFileDialog_FORMAT, "BIN", 1); // e
+// [Engine Memory]: 3,062 MB (+898539kb) [00:10:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,086 MB. GUI used memory: 106 MB. Current time: 7/15/25, 3:06:57 PM CEST
+setText(PAResourceTtoZ.WriteCfgMemFileDialog_SPECIFY_CONFIGURATION_FILENAME, "partial_flashing.bin"); // ao
+selectCheckBox(PAResourceTtoZ.WriteCfgMemFileDialog_LOAD_BITSTREAM_FILES, "Load bitstream files", true); // g: TRUE
+selectButton(PAResourceTtoZ.WriteCfgMemFileDialog_SPECIFY_BITFILE_FILENAME, (String) null); // t
+// Elapsed time: 22 seconds
+setFileChooser("/home/zt283801/lowrisc_ip_aes_wrap_1.0/default-vivado/lowrisc_ip_aes_wrap_1.0.runs/child_0_impl_1/led_flashing_led_flashing_partial.bit");
+// 'aH' command handler elapsed time: 61 seconds
+// Elapsed time: 24 seconds
+dismissDialog("Write Memory Configuration File"); // aU
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// [GUI Memory]: 171 MB (+6000kb) [00:11:56]
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ak
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+// 'dX' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  5221 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,111 MB. GUI used memory: 116 MB. Current time: 7/15/25, 3:08:47 PM CEST
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Settings"); // d
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ak
+// [GUI Memory]: 198 MB (+18891kb) [00:12:55]
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Settings"); // d
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+// Elapsed time: 149 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ak
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Elapsed time: 127 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+// Elapsed time: 66 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenuItem(PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE, "Generate Memory Configuration File..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE
+// aU (cs): Write Memory Configuration File: addNotify
+// Elapsed time: 59 seconds
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 3,113 MB. GUI used memory: 111 MB. Current time: 7/15/25, 3:38:52 PM CEST

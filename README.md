@@ -1,66 +1,74 @@
-# VexiiRiscv
+# Integrate Opentitan AES module to Vexiiriscv MicroSoc
 
-VexiiRiscv (Vex2Risc5) is the successor of VexRiscv. Work in progress, here are its currently implemented features :
+This project aims to integrate the AES hardware IP from the OpenTitan project into the RISC-V-based MicroSoC from the VexRiscv project.
 
-- RV32/64 I[M][A][F][D][C][S][U][B]
-- Up to 5.24 coremark/Mhz 2.50 dhystone/Mhz
-- In-order execution
-- early [late-alu]
-- single/dual issue (can be asymmetric)
-- BTB, GShare, RAS branch prediction
-- cacheless fetch/load/store
-- Optional I$, D$
-- Optional SV32/SV39 MMU
-- Can run linux / buildroot / Debian
-- Pipeline visualisation in simulation via Konata
-- Lock step simulation via RVLS and Spike
-- AXI4, Wishbone, Tilelink memory busses (RVA is not available in some configs, see the RTD doc SoC main page)
-- ... and many other things
+The following steps should be followed to generate a bitstream for the project.
 
-Here is a demonstration of a quad core VexiiRiscv running debian on FPGA : https://youtu.be/dR_jqS13D2c?t=112
+The project can be created by simply running the TCL script located at /Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/MicroSoc-AES.tcl. This script includes all the modifications described in this README and in the AES_module_integration_with_MicroSoc.pdf document, and generates a Vivado project ready for partial reconfiguration. For better understanding and future modifications, the detailed steps are also provided below.
 
-Overall the goal is to have a design which can stretch (through configuration) from Cortex M0 up to a Cortex A53 and potentialy beyond.
+# Clone VEXIIRISCV-AES Repository
 
-Here is the online documentation : 
+The first step is to clone the VexRiscv repository.
+Since both the hardware (e.g. peripheral integration) and software are actively maintained and updated, it's important to regularly pull the latest changes 
 
-- https://spinalhdl.github.io/VexiiRiscv-RTD/master/VexiiRiscv/Introduction/#
-- https://spinalhdl.github.io/VexiiRiscv-RTD/master/VexiiRiscv/HowToUse/index.html
+https://github.com/zaskill/Vexiiriscv-AES.git 
 
-Here is the VexiiRiscv's scala doc (auto-generated from the source code) :
+# Clone Opentitan Repository 
 
-- https://spinalhdl.github.io/VexiiRiscv/doc/vexiiriscv/index.html
+It is necessary to clone the opentitan repository to get the necessary files for the AES HW IP.
+It is recommended to clone this repository outside the VEXIIRISCV-AES folder.
 
-A roadmap is available here : 
+https://github.com/lowRISC/opentitan.git
 
-- https://github.com/SpinalHDL/VexiiRiscv/issues/1
+# Opentitan AES IP extraction
 
-# TL;DR Getting started
+Fusesoc is used to extract the necessary RTL files for the AES IP.
+Doing this manually is quite challenging, as the AES IP has many dependencies — totaling around 230 files.
+Without Fusesoc, correctly resolving these dependencies and file order would be error-prone and time-consuming.
 
-The quickest way for getting started is to pull the Docker image with all the dependencies installed
+To use the AES IP from OpenTitan, start by cloning the OpenTitan repository from https://github.com/lowRISC/opentitan.git. 
 
-Please refer to the self contained tutorial for a comprehensive step by step instruction manual with
-screenshots: https://spinalhdl.github.io/VexiiRiscv-RTD/master/VexiiRiscv/Tutorial/index.html
+If fusesoc is not already installed, it can be installed using pip install fusesoc. Once installed, you can explore available AES-related IPs by running fusesoc list-cores | grep aes. 
 
-After running the generation you'll find a file named "VexiiRiscv.v" in the root
-of the repository folder, which you can drag into your Quartus or whatever.
+The IP core relevant for integration is aes_wrap, which serves as a top-level wrapper around the AES module. It includes a finite state machine (FSM) to handle TileLink communication. The I/O interface of this wrapper exposes only the key and the encrypted/decrypted data, making it suitable for direct integration into SoC environments.
 
-We decided to not start covering FPGA boards because there's just too many, so it's up to you
-to define your pin configuration for your specific FPGA board
+# Aes_wrap.sv file
 
-If you want to know what else you can do with sbt, please refer to the complete documentation.
+The fsm of the aes file has been changed to be compatible with moree functiannalities than the ones provided by the open titan teams 
 
-# Rebuild the Docker container
+-Start Signal Support:
+The modified version introduces an external start signal (with pulse detection logic) to trigger encryption/decryption, making it more suitable for software-controlled execution from a RISC-V SoC.
 
-In case you wanna rebuild leviathan's Docker container you can run
+-CTR Mode Support & IV Input:
+The modified wrapper supports AES in CTR mode and introduces an aes_iv input port. The FSM was updated to handle IV writing via TL-UL transactions.
 
-    docker build . -f docker/Dockerfile -t vexiiriscv --progress=plain
+-Decryption Capability:
+Added aes_decrypt_i input to allow dynamic switching between encryption and decryption modes, supporting more flexible use cases.
 
+-Pulse-Based Data_valid
+The data_valid signal is asserted when the AES operation finishes and then automatically cleared, ensuring synchronization with the host software.
 
+--The aes_wrap.sv file must be modified from its original version, as the I/O interface differs in the newer implementation !
+
+# Builduing Software
+
+To build software, this command can be used to compile the cpp files, all the Makefiles are already configured for the desired compilation.
+
+cd Vexiifirmware
 rm -rf build && cmake -S . -B build -DSOC=microsoc/default -DDEVICE=microsoc_sim &&  make -C build example-aes
+
+# Building Hardware (Microsoc SOC)
+
+The Microsoc Soc is based on a Vexiiriscv RISCV processor with some basic peripherals (UART, RAM ...). 
+This SoC was modified in this project, and AES module from the Opentitan project was added as a peripheral, the vexiiriscv cpu can control the IP.
+
+The github of the original project : https://github.com/SpinalHDL/VexiiRiscv.git
+
+To build hardware, this command can be used to compile the scala files. 
 
 sbt "runMain vexiiriscv.soc.micro.MicroSocGen \
   --ram-bytes 16384 \
-  --ram-elf /nobackup/Vexiiriscv-AES/VexiiFirmware/build/app/aes/example-aes.elf \
+  --ram-elf "PATH_TO_REPO/Vexiiriscv-AES/VexiiFirmware/build/app/aes/example-aes.elf" \
   --demo-peripheral leds=8,buttons=4 \
   --xlen 32 \
   --with-mul \
@@ -72,87 +80,19 @@ sbt "runMain vexiiriscv.soc.micro.MicroSocGen \
   --reset-vector 0x80000000 \
   --with-supervisor"
 
+Then the aes_wrap project generated with fusesoc should be opened and the following files located in Rtl_files should be added :
+-aes_wrap.sv (should replace the original)
+-prim_alert_sender.sv (should replace the original)
+-top_microsoc.sv
+-fifo128to32.v
 
-aes_wrap aes (
-    .clk_i         (io_clk               ), //i
-    .rst_ni        (aes_rst_ni           ), //i
-    .aes_input     (128'h6bc1bee22e409f96e93d7e117393172a), //i
-    .aes_key       (256'h00000000000000008e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b), //i
-    .aes_output    (aes_aes_output[127:0]), //o
-    .alert_recov_o (aes_alert_recov_o    ), //o
-    .alert_fatal_o (aes_alert_fatal_o    ), //o
-    .test_done_o   (aes_test_done_o      )  //o
-  );
+After running the command above two files are generated and should be added to the project :
 
-   ila_1 ila_1(
-    .clk(io_clk),
-    .probe0(aes_aes_output),
-    .probe1(aes_test_done_o),
-    .probe2(aes_alert_fatal_o),
-    .probe3(aes_alert_recov_o),
-    .probe4(aes_rst_ni),
-    .probe5(inputData),
-    .probe6(keyData),
-    .probe7(decryptModeReg),
-    .probe8(aesIv),
-    .probe9(startReg)
+-MicroSoc.v
+-soc.h
 
-  );
+# Partial reconfiguration
+
+To enable partial reconfiguration and bitstream generation, a document FPGA_partial_configuration_using_ICAP.pdf located in document folder can be helpful to enable reconfiguration and generate a partial bitstream for the desired design.
 
 
-  6bc1bee22e409f96e93d7e117393172a
-  8e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b
-  ec46c3488dbe811a0dfbcb30440c243b
-
-
-
-
-f41fddab55e3987067a9112a15c93ae8
-E83AC9152A11A9677098E355ABDD1FF4
-
-AES_CTR
-
-
-
-#66AA9955 00000004 8001000C E0000000
-
-
-0b'Decrypted : FFFFFFFF FFFFFFFF FFFFFFFF 00000000 \r\n'
-
-1b'Decrypted : FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF \r\n'
-
-2b'Decrypted : 000000DD 88440022 FFFFFFFF FFFFFFFF \r\n'
-
-3b'Decrypted : 5599AA66 04000000 0C000180 FFFFFFFF \r\n'
-
-4b'Decrypted : 04000000 04000000 0C800180 000000E0 \r\n'
-
-5b'Decrypted : 0C000180 00000000 0C000380 C0C608C9 \r\n'
-
-6b'Decrypted : .0C000580 00008000 0C000380 00008000 \r\n' ......
-
-b'Decrypted : 0C000580 00002000 0C000180 00002000 \r\n'
-
-b'Decrypted : 04000000 0C000480 00402000 00000080 \r\n'
-
-b'Decrypted : 0C000200 0A0037CA 00000000 04000000 \r\n'
-
-Chunk 0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-
-Chunk 0001: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-
-Chunk 0002: DD000000 22004488 FFFFFFFF FFFFFFFF
-
-Chunk 0003: 66AA9955 00000004 8001000C E0000000
-
-Chunk 0004: 00000004 00000004 8001800C C908C6C0
-
-Chunk 0005: .8001000C 00000000 8003000C 00800000
-
-Chunk 0006: 8005000C 00800000 8003000C 00200000
-
-Chunk 0007: 8005000C 00200000 8001000C 80000000
-
-Chunk 0008: 00000004 8004000C 00204000 00000004
-
-Chunk 0009: 0002000C CA37000A 00000000 00000000

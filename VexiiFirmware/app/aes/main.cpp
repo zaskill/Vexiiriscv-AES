@@ -3,7 +3,7 @@
 #include <cstdlib>
 
 //The base adress for AES module is 0x1005000
-    //Adressing details for each IO (Each 4 bytes are sored in an address)
+    //Adressing details for each IO (Each 4 bytes are stored in an address)
     // Input[0] 0x10005004
     // Input[1] 0x10005008
     // Input[2] 0x1000500C

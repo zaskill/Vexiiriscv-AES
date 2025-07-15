@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 15 14:55:48 2025
+# Process ID: 3054187
+# Current directory: /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado
+# Command line: vivado
+# Log file: /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/vivado.log
+# Journal file: /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nobackup/Vexiiriscv-AES/Vexii-AES-Vivado-Project/default-vivado/MicroSoc-AES.xpr

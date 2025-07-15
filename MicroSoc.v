@@ -5373,7 +5373,7 @@ module PeripheralAesCore (
     .alert_fatal_o (aes_alert_fatal_o    ), //o
     .data_valid    (aes_data_valid       )  //o
   );
-
+/*
      ila_1 ila_1(
     .clk(io_clk),
     .probe0(aes_aes_output),
@@ -5388,6 +5388,7 @@ module PeripheralAesCore (
     .probe9(startReg)
 
   );
+  */
   `ifndef SYNTHESIS
   always @(*) begin
     case(io_bus_a_payload_opcode)
