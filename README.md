@@ -34,19 +34,29 @@ The IP core relevant for integration is aes_wrap, which serves as a top-level wr
 
 # Aes_wrap.sv file
 
-The fsm of the aes file has been changed to be compatible with moree functiannalities than the ones provided by the open titan teams 
+-Introduction of a start Signal:
+A new input signal, start, was added to explicitly trigger the FSM from software after input data is loaded. This ensures precise initiation of the AES operation.
 
--Start Signal Support:
-The modified version introduces an external start signal (with pulse detection logic) to trigger encryption/decryption, making it more suitable for software-controlled execution from a RISC-V SoC.
+-Rising Edge Detection on start:
+To avoid multiple unintended FSM cycles due to slow deassertion of the start signal, a one-cycle pulse (start_pulse) was generated using edge detection logic (start_r and start_r_prev).
 
--CTR Mode Support & IV Input:
-The modified wrapper supports AES in CTR mode and introduces an aes_iv input port. The FSM was updated to handle IV writing via TL-UL transactions.
+-Latched Start Control:
+A flag start_latched was introduced to retain the start condition once asserted. Initially, the start pulse lasted only one clock cycle, which was too short to be reliably detected when the FSM was in the IDLE state, causing it to be missed. By latching the signal, it remains asserted throughout the entire duration of the IDLE state, ensuring the FSM consistently detects the trigger and initiates exactly one AES operation per request.
 
--Decryption Capability:
-Added aes_decrypt_i input to allow dynamic switching between encryption and decryption modes, supporting more flexible use cases.
+-Extended Mode Support (CTR, CBC):
+Inputs aes_iv (initialization vector) and aes_decrypt_i (decryption mode selector) were introduced, allowing the wrapper to support modes beyond ECB, such as CTR.
 
--Pulse-Based Data_valid
-The data_valid signal is asserted when the AES operation finishes and then automatically cleared, ensuring synchronization with the host software.
+-IV Handling in FSM:
+The FSM was updated to properly load the initialization vector (IV) data into the AES core when required by the selected mode. In the original implementation, the IV was hardcoded to zero and not even connected as an input to the aes_wrap module, effectively causing it to be ignored. The modifications ensure that valid IV data is now provided to the core as needed.
+
+-Improved FSM Restart Behavior:
+The FSM now returns to the IDLE state after completing an operation instead of staying in FINISH. This change enables repeated AES operations without requiring a reset. The FSM only restarts when a new input is received, as explained with the start protocol earlier, ensuring one operation per distinct trigger.
+
+-Data Valid Output Signal:
+A new output, data_valid, was introduced to indicate when a valid AES output is available. This signal is critical for ensuring proper synchronization with downstream modules, such as the input of the FIFO, which uses it to enable writing only when the AES output is fully processed. Without this mechanism, the same data could be written multiple times, potentially corrupting the configuration when interfacing with components like ICAP.
+
+-Debugging Support (Optional):
+An ILA instance (ila_3) was temporarily added for debugging internal FSM signals like data_valid, start_pulse, and state transitions.
 
 --The aes_wrap.sv file must be modified from its original version, as the I/O interface differs in the newer implementation !
 
